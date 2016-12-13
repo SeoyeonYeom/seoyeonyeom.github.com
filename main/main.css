@@ -168,41 +168,41 @@ header{
 }
 
 #fds-class ul li:nth-of-type(1){
-  background: url("images/article.png") 50% 50%, no-repeat;
+  background: url("images/article.png") 50% 50% no-repeat;
   color: #fff;
 }
 
 #fds-class ul li:nth-of-type(2){
-  background: url("images/hyundai.PNG") 50% 50%, no-repeat;
+  background: url("images/hyundai.PNG") 50% 50% no-repeat;
   color: #000;
 }
 
 #fds-class ul li:nth-of-type(3){
-  background: url("images/catalog.png") 50% 50%, no-repeat;
+  background: url("images/catalog.png") 50% 50% no-repeat;
   color: #fff;
 }
 
 #fds-class ul li:nth-of-type(4){
-  background: url("images/box.PNG") 50% 50%, no-repeat;
+  background: url("images/box.PNG") 50% 50% no-repeat;
   color: #000;
 }
 
 #fds-class ul li:nth-of-type(5){
-  background: url("images/clock.PNG") 50% 50%, no-repeat;
+  background: url("images/clock.PNG") 50% 50% no-repeat;
   color: #000;
 }
 
 #fds-class ul li:nth-of-type(6){
-  background: url("images/modal.PNG") 50% 50%, no-repeat;
+  background: url("images/modal.PNG") 50% 50% no-repeat;
   color: #fff;
 }
 
 #fds-class ul li:nth-of-type(7){
-  background: url("images/playing.PNG") 50% 50%, no-repeat;
+  background: url("images/playing.PNG") 50% 50% no-repeat;
   color: #fff;
 }
 
 #fds-class ul li:nth-of-type(8){
-  background: url("images/scolling.PNG") 50% 50%, no-repeat;
+  background: url("images/scolling.PNG") 50% 50% no-repeat;
   color: #000;
 }
