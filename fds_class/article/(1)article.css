@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+
+/* 스타일 초기화 */
+html,body,header,div,main,footer,section,aside,figure,figcaption,ul,ol,li,a,h1,h2,h3,p,dl,dt,dd,fieldset{
+  margin: 0;
+  padding: 0;
+}
+img{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+
+.header,.main-1,.main-2,.main-3,footer,.button{
+  width: 900px;
+  margin: 40px auto 40px;
+}
+
+.pic4{
+  width: 960px;
+  margin: 0 auto;
+}
+
+span{
+display: block;
+}
+
+.head{
+  font-size: 48px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  clear: both;
+  color: #222222;
+}
+
+.head-description{
+  color: #9e9e9e;
+  font-size: 28px;
+  position: relative;
+}
+
+.head-description span:first-child::before{
+  content: "";
+  background: url("image_source/icon-bookmarks.png") 50% 50%;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.info1{
+  float: left;
+  color: #1f4ba5;
+}
+
+.info2{
+  color: #dedede;
+  float: left;
+  margin-left: 20px;
+}
+
+.pic-title,.pic-title2,.pic-title3{
+  color: #d4d4d4;
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.pic-title2{
+  text-align: center;
+  width: 600px;
+}
+
+.info3{
+  color: #9e9e9e;
+  float: right;
+}
+
+
+
+.visual{
+  width: 960px;
+  margin: 0 auto;
+}
+.pic-title3{
+  width: 900px;
+  margin: 10px auto 40px;
+}
+
+
+.para1,.para2,.para3{
+  color: #868686;
+  font-size: 16px;
+  width: 600px;
+  line-height: 30px;
+
+}
+
+.pic4{
+  position: relative;
+}
+
+.pictures{
+  display: block;
+}
+
+.grape,.bus,.russel,.mountain{
+  float: left;
+}
+
+.pic-title{
+  clear: both;
+  position: absolute;
+  padding-top: 250px;
+}
+
+.pic-title > *{
+  float: left;
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.subject{
+  font-size: 30px;
+  color: #222222;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.order{
+  clear: both;
+  padding-top: 100px;
+  position: relative;
+}
+
+.prev,.next{
+  position: absolute;
+  border: 1px solid lightgray;
+  padding: 20px 25px 20px;
+}
+
+.next{
+  margin-left: 60px;
+}
+
+.page{
+  color: #969696;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+
+.quote{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: inline-block;
+  width: 360px;
+  font-size: 18px;
+  line-height: 30px;
+
+}
+
+.komol{
+  float: right;
+  width: 500px;
+  padding-top: 40px;
+}
+
+.pic-komol{
+  display: block;
+}
+
+.from-komol{
+  font-size: 12px;
+  color: #d9d9d9;
+}
+
+.contents{
+  padding-top: 40px;
+}
+
+.first,.second{
+  display: block;
+  width: 280px;
+  float: left;
+  line-height: 30px;
+  color: #9e9e9e;
+}
+
+.second{
+  padding-left: 30px;
+}
+
+.contents h3{
+  line-height: normal;
+  padding-bottom: 15px;
+  color: #313131;
+}
+
+.SNS{
+  clear: both;
+  padding-top: 45px;
+
+}
+
+.facebook,.twitter,.google,.pinterest{
+  float: left;
+}
+
+.twitter,.google,.pinterest{
+  padding-left: 13px;
+}
+
+.go-back{
+  clear: both;
+  padding-top: 30px;
+}
+
+.go-back > a{
+  color: #4c6fb7;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.icon-1,.icon-2{
+  position: absolute;
+}
+
+.icon-1{
+  top: 310px;
+  left: 450px;
+}
