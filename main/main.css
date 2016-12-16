@@ -175,7 +175,7 @@ header{
 }
 
 #fds-class ul li:nth-of-type(3){
-  background: url("images/boxchange.PNG") 50% 50% no-repeat;
+  background: url("images/boxchange.png") 50% 50% no-repeat;
   color: #000;
 }
 
@@ -185,7 +185,7 @@ header{
 }
 
 #fds-class ul li:nth-of-type(5){
-  background: url("images/matrix.PNG") 50% 50% no-repeat;
+  background: url("images/matrix.png") 50% 50% no-repeat;
   color: #fff;
 }
 
@@ -205,11 +205,11 @@ header{
 }
 
 #fds-class ul li:nth-of-type(9){
-  background: url("images/ironman.PNG") 50% 50% no-repeat;
+  background: url("images/ironman.png") 50% 50% no-repeat;
   color: #fff;
 }
 
 #fds-class ul li:nth-of-type(10){
-  background: url("images/outbody.PNG") 50% 50% no-repeat;
+  background: url("images/outbody.png") 50% 50% no-repeat;
   color: #000;
 }
