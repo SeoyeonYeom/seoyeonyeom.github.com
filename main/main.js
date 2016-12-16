@@ -5,7 +5,7 @@
   function followScroll(){
     var spider = document.querySelector('.spider');
     var my_height = this.scrollY;
-    var height_ratio = my_height / 12;
+    var height_ratio = my_height / 10;
     console.log(height_ratio);
 
     var spider_height = spider.style.top;
