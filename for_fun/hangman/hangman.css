@@ -283,7 +283,8 @@
   border-radius: 2px;
   box-shadow: 0 0 0 5px #090;
   display: block;
-  width: 40px;
+  width: 120px;
+  text-align: center;
   font-weight: bold;
   font-size: 20px;
   padding: 10px 20px;

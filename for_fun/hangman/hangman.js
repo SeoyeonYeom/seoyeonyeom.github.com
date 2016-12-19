@@ -187,12 +187,12 @@ function gameEnd(e) {
     var d = document.querySelector(".result");
     d.setAttribute("data", e);
     if(e) {
-      gId("win").innerText = "You Win!";
-      gId("message").innerHTML = "Congratulations, you found the word!<br/><br/>Good Job!";
+      gId("win").innerText = "You Win";
+      gId("message").innerHTML = "천잰데?ㅋㅋㅋㅋㅋㅋ";
     }
     else {
       gId("win").innerText = "You Lose!"
-      gId("message").innerHTML = "The word was <br/><br/>\"" + word[select].toUpperCase() + "\"<br/><br/>Better luck next time.";
+      gId("message").innerHTML = "정답은 <br/><br/>\"" + word[select].toUpperCase() + "\"<br/><br/>다음에 또 도전하세요!";
     }
     d.classList.remove('hidden');
 }
