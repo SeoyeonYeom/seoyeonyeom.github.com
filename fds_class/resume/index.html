@@ -90,6 +90,16 @@ h2{
 
   </footer>
 <img class="flying" src="flying.png" alt="아이언맨 이미지">
+<script>
+
+  var icon = document.querySelector('.flying');
+  icon.onclick = function fly(){
+    this.style.bottom = "70%";
+    this.style.opacity = "0.3";
+    this.style.transition = "all, 5s";
+  }
+
+</script>
 
 </body>
 </html>
