@@ -138,6 +138,19 @@ header{
   padding: 5px 10% 5px 10%;
 }
 
+#project-null p{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+#project-null .url{
+  font-size: 1.8rem;
+  display: block;
+  font-weight: bold;
+  color: #bf2a69;
+  text-decoration: underline;
+}
+
 #fds-class ul{
   margin-bottom: 200px;
 }
