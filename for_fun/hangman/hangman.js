@@ -71,7 +71,7 @@ function createWord() {
       var x = word[select][a].toUpperCase();
       // word[select][a] = 뽑힌 단어의 a-1번째 철자를 대문자로 변환
       var b = document.createElement("span");
-        b.className = "letter" + (x == " " ? " ls" : "");
+        b.className = "letter";
         b.innerHTML = "&nbsp";
         b.id = "letter" + a;
         d.appendChild(b);
@@ -104,6 +104,7 @@ function createKeyboard() {
 function bTas(a) {
   if(a.getAttribute("data") == "") {
     var x = isExist(a.innerText);
+    //isExist는 글자가 존재하면 true, 아니면 false를 반환하는 함수
     a.setAttribute("data", x);
     if(x) {
       if(wordLeft.length == 0) { //wordLeft에 남은 글자가 없으면 게임 over

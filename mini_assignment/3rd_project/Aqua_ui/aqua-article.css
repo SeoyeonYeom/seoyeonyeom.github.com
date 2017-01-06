@@ -45,6 +45,10 @@ img{
   width: 1170px;
   height: 110px;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +57,10 @@ img{
 
 .navigation{
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
@@ -62,6 +70,10 @@ img{
 
 .navigation ul{
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   width: 200px;
@@ -97,11 +109,19 @@ img{
 .my-section{
   width: 240px;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   align-items: center;
 }
 
 .profile{
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   width: 180px;
@@ -200,6 +220,10 @@ img{
 
 .second-p, .third-p{
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 75px;
@@ -256,6 +280,10 @@ img{
   padding-top: 110px;
   padding-bottom: 90px;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: center;
   align-items: baseline;
 }
@@ -379,6 +407,10 @@ img{
 .comment-box{
   width: 700px;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -402,6 +434,10 @@ img{
 .comment-box-1{
   width: 420px;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-left: auto;
@@ -448,6 +484,10 @@ img{
 
 .comment-section{
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: flex-start;
   align-items: center;
 }
@@ -485,6 +525,10 @@ img{
   width: 1170px;
   margin: auto;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   justify-content: space-around;
   align-items: center;
   color: #fff;
@@ -497,7 +541,7 @@ img{
   position: relative;
 }
 
-[class*="pic-"]:hover, [class*="pic-"]:focus{
+[class*="pic-"].selected{
   opacity: 0.8;
 }
 
@@ -520,7 +564,7 @@ img{
 
 .pic-first p, .pic-second h2, .pic-third h2{
   top: 60%;
-  width: 300px;
+  width: 308px;
   border-bottom: 1px solid gray;
   padding-bottom: 30px;
 }
@@ -563,7 +607,13 @@ img{
 .carousel{
   position: absolute;
   bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   width: 100px;
   justify-content: space-around;
   align-items: center;
@@ -577,7 +627,7 @@ img{
   height: 10px;
 }
 
-.carousel .carousel-2{
+.carousel .selected{
   background-color: #0081ff;
 }
 
@@ -635,6 +685,10 @@ footer form img{
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-flex;
   align-items: center;
   justify-content: space-between;
   color: #bbc0d4;
