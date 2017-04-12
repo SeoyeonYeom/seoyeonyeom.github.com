@@ -17,14 +17,20 @@ $(function(){
 
     $('.body_wrapper').append(renderTpl('#tpl_About', {}));
     $('.body_wrapper').append(renderTpl('#tpl_Works', {}));
-    $('.works_wrapper .content_section').append(renderTpl('#tpl_Works1'));
-    $('.works_wrapper .content_section').append(renderTpl('#tpl_Works2'));
+    // $('.body_wrapper').append(renderTpl('#tpl_Career', {}));
+    // $('.body_wrapper').append(renderTpl('#tpl_Contact', {}));
+
 
     $('.navigation .sub_nav li').on('click', function(){
         var page_name = $(this).parents('li').attr('class').split('_')[1];
         drawContents(page_name);
     });
 
+    $('.small_nav li').on('click', function(){
+        $('.content_section > div').css('display', 'none');
+        var name = $(this).attr('class')+'_container';
+        $('div.'+name).css('display', 'block');
+    });
 });
 
 // jsrender 함수 정의 //

@@ -60,12 +60,15 @@
 .works_wrapper .cont_box > a button:focus{
     text-decoration: underline;
 }
-
 .works_wrapper .cont_text h4{
     font-size: 28px;
     color: #add3d6;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.works_wrapper .cont_text p{
+    font-size: 13px;
+    width: 190px;
 }
 
 
@@ -73,9 +76,40 @@
 
 .works2_container .cont_box .cont_img{
     width: 370px;
-    height: auto;
+}
+.works2_container .cont_box .cont_img img{
+    width: 120%;
 }
 .works2_container .cont_box .cont_text{
     width: 220px;
     height: auto;
+}
+
+
+/* my works page */
+
+.content_section .works3_container{
+    width: 650px;
+    margin: auto;
+    padding-top: 50px;
+}
+.works3_container > div[class*='works']{
+    margin-bottom: 40px;
+}
+.works3_container .works3_text{
+    width: 350px;
+    float: left;
+    height: 180px;
+}
+.works3_container .works3_img{
+    width: 180px;
+    height: 180px;
+    float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+.works3_img img{
+    width: auto;
+    height: 100%;
 }

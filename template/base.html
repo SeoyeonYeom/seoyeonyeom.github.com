@@ -9,6 +9,7 @@
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.84/jsrender.min.js"></script>
       <script src="../static/js/common.js"></script>
+      <script src="../static/js/works.js"></script>
       <title>My Page</title>
 </head>
 <body>
@@ -18,24 +19,24 @@
                 <nav class="navigation">
                     <ol>
                         <li class="nav_about" id="aboutPg">
-                            <div>ABOUT</div>
+                            <div>PROFILE</div>
                             <ul class="sub_nav">
-                                <li>PROFILE</li>
+                                <li>ABOUT</li>
                                 <li>EDUCATION</li>
                                 <li>RESUME</li>
                             </ul>
                         </li>
                         <li class="nav_works" id="worksPg">
-                            <div>WORKS</div>
+                            <div>2016</div>
                             <ul class="sub_nav">
                                 <li>HTML/CSS</li>
                                 <li>SASS/RESPONSIVE</li>
-                                <li>WORKS</li>
-                                <li>PROJECT</li>
+                                <li>FOR FUN WITH JS</li>
+                                <li>TEAM PROJECT</li>
                             </ul>
                         </li>
                         <li class="nav_career" id="careerPg">
-                            <div>CAREER</div>
+                            <div>2017</div>
                         </li>
                         <li class="nav_contact" id="contactPg">
                             <div>CONTACT</div>
@@ -53,10 +54,10 @@
     <!-- about 페이지 세부 템플릿 -->
     <script id="tpl_About" type="text/x-jsrender">
         <div class="about_wrapper" style="display:none">
-            <div class="head_section head">ABOUT</div>
+            <div class="head_section head">MY PROFILE</div>
             <div class="small_nav">
                 <ul>
-                    <li>PROFILE</li>
+                    <li>ABOUT</li>
                     <li>EDUCATION</li>
                     <li>RESUME</li>
                 </ul>
@@ -89,13 +90,13 @@
         <link rel="stylesheet" href="../static/style/works.css"/>
 
         <div class="works_wrapper" >
-            <div class="head_section head">WORKS</div>
+            <div class="head_section head">When I was a very beginner...</div>
             <div class="small_nav">
                 <ul>
                     <li class="works1">HTML/CSS</li>
                     <li class="works2">SASS/RESPONSIVE</li>
-                    <li class="works3">WORKS</li>
-                    <li class="works4">PROJECT</li>
+                    <li class="works3">FOR FUN WITH JS</li>
+                    <li class="works4">TEAM PROJECT</li>
                 </ul>
             </div>
             <div class="content_section"></div>
@@ -105,28 +106,28 @@
     <script id="tpl_Works1" type="text/x-jsrender">
         <div class="works1_container">
             <div class="cont_box">
-                <div class="cont_img"><img src="../static/images/article_quick.jpg" alt=""/></div>
+                <div class="cont_img"><img src="../static/images/article_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
                     <h4>Article</h4>
-                    <p>첫 과제</p>
+                    <p>패스트캠퍼스 첫 과제로, 기본 HTML/CSS만을 사용한 단일 페이지입니다.</p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
             <div class="cont_box">
-                <div class="cont_img"><img src="../static/images/aqua_quick.jpg" alt=""/></div>
+                <div class="cont_img"><img src="../static/images/aqua_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
                     <h4>Aqua</h4>
-                    <p>동적 기능 추가</p>
+                    <p>기본 뷰 페이지에 JS로 간단한 동적 효과를 구현했습니다.</p>
                 </div>
                 <a href="#"> <button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
             <div class="cont_box">
-                <div class="cont_img"><img src="../static/images/movie_quick.jpg" alt=""/></div>
+                <div class="cont_img"><img src="../static/images/movie_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
                     <h4>Movie page</h4>
-                    <p>'크리스마스의 악몽' 영화 페이지</p>
+                    <p>영화 '크리스마스의 악몽' 선재들로 구성한 단일 페이지입니다.</p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
@@ -135,12 +136,12 @@
     </script>
 
     <script id="tpl_Works2" type="text/x-jsrender">
-        <div class="works2_container" style="display:none">
+        <div class="works2_container" style="display: none">
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/aware_quick.jpg" alt=""/></div>
                 <div class="cont_text">
-                    <h4>Aware</h4>
-                    <p>sass 활용한 aware wide 버전 </p>
+                    <h4>Aware 1920</h4>
+                    <p>SASS를 활용한 쇼핑몰 페이지뷰입니다. </p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
@@ -149,7 +150,7 @@
                 <div class="cont_img"><img src="../static/images/polio_quick.jpg" alt=""/></div>
                 <div class="cont_text">
                     <h4>Polio</h4>
-                    <p>반응형 웹 페이지</p>
+                    <p>웹, 태블릿, 모바일을 지원하는 3단계 반응형 과제입니다.</p>
                 </div>
                 <a href="#"> <button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
@@ -158,14 +159,49 @@
     </script>
 
     <script id="tpl_Works3" type="text/x-jsrender">
-        <div class="first">
-        <p>this is first page.</p>
+        <div class="works3_container" style="display: none">
+            <div class="works3_ironman">
+                <div class="works3_img">
+                    <img src="../static/images/ironman.jpg" alt="아이언맨 이미지"/>
+                </div>
+                <div class="works3_text">
+                    <p>아이언맨 실습페이지</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="works3_matrix">
+                <div class="works3_img">
+                    <img src="../static/images/matrix.jpg" alt="매트릭스 영화 이미지"/>
+                </div>
+                <div class="works3_text">
+                    <p>매트릭스 만든 페이지</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="works3_game">
+                <div class="works3_img">
+                    <img src="../static/images/hangman.jpg" alt="행맨 게임 이미지"/>
+                </div>
+                <div class="works3_text">
+                    <p>행맨 게임</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="works3_playing">
+                <div class="works3_img">
+                    <img src="../static/images/playing.png" alt="음악 아이콘 이미지"/>
+                </div>
+                <div class="works3_text">
+                    <p>음악 애니메이션</p>
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
     </script>
 
     <script id="tpl_Works4" type="text/x-jsrender">
         <div class="first">
-        <p>this is first page.</p>
+
         </div>
     </script>
 
