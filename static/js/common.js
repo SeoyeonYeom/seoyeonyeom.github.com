@@ -1,0 +1,50 @@
+
+$(function(){
+    $.views.settings.delimiters("<%", "%>");
+
+    $('.navigation > ol > li').hover(function(){
+        if ($('.navigation > ol > li .showed').length > 0) {
+            $('.navigation > ol > li .showed').removeClass('showed');
+        }
+        $(this).find('.sub_nav').addClass('showed');
+        $('body').on('click', function(e){
+            if ($(e.target).hasClass('.showed')){
+            } else {
+                $('.navigation li .showed').removeClass('showed');
+            }
+        });
+    });
+
+    $('.body_wrapper').append(renderTpl('#tpl_About', {}));
+    $('.body_wrapper').append(renderTpl('#tpl_Works', {}));
+    $('.works_wrapper .content_section').append(renderTpl('#tpl_Works1'));
+    $('.works_wrapper .content_section').append(renderTpl('#tpl_Works2'));
+
+    $('.navigation .sub_nav li').on('click', function(){
+        var page_name = $(this).parents('li').attr('class').split('_')[1];
+        drawContents(page_name);
+    });
+
+});
+
+// jsrender 함수 정의 //
+function renderTpl(id, obj) {
+	var tmpl = $.templates(id);
+	var data = obj;
+	var html = tmpl.render(data);
+	return html;
+}
+
+// Big 페이지 그리는 함수 //
+function drawContents(flag){
+    $('.body_wrapper > div').css('display', 'none');
+    if (flag == 'about') {
+        $('.about_wrapper').css('display', 'block');
+    } else if (flag == 'works') {
+        $('.works_wrapper').css('display', 'block');
+    } else if (flag == 'career') {
+        $('.career_wrapper')
+    } else if (flag == 'contact') {
+
+    }
+}

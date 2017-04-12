@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="../static/style/common.css" rel="stylesheet">
+      <link href="../static/style/base.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.84/jsrender.min.js"></script>
+      <script src="../static/js/common.js"></script>
+      <title>My Page</title>
+</head>
+<body>
+      <header>
+            <div class="head_wrapper">
+                <div class="main_img"><img src="../static/images/cat-icon.png" alt="고양이 아이콘"></div>
+                <nav class="navigation">
+                    <ol>
+                        <li class="nav_about" id="aboutPg">
+                            <div>ABOUT</div>
+                            <ul class="sub_nav">
+                                <li>PROFILE</li>
+                                <li>EDUCATION</li>
+                                <li>RESUME</li>
+                            </ul>
+                        </li>
+                        <li class="nav_works" id="worksPg">
+                            <div>WORKS</div>
+                            <ul class="sub_nav">
+                                <li>HTML/CSS</li>
+                                <li>SASS/RESPONSIVE</li>
+                                <li>WORKS</li>
+                                <li>PROJECT</li>
+                            </ul>
+                        </li>
+                        <li class="nav_career" id="careerPg">
+                            <div>CAREER</div>
+                        </li>
+                        <li class="nav_contact" id="contactPg">
+                            <div>CONTACT</div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+      </header>
+      <div class="body_wrapper">
+            <button type="button" class="button btn_start red" style="display:none">GET START</button>
+      </div>
+
+
+
+    <!-- about 페이지 세부 템플릿 -->
+    <script id="tpl_About" type="text/x-jsrender">
+        <div class="about_wrapper" style="display:none">
+            <div class="head_section head">ABOUT</div>
+            <div class="small_nav">
+                <ul>
+                    <li>PROFILE</li>
+                    <li>EDUCATION</li>
+                    <li>RESUME</li>
+                </ul>
+            </div>
+            <div class="content_section"></div>
+        </div>
+    </script>
+
+    <script id="tpl_About1" type="text/x-jsrender">
+        <div class="first">
+            <p>this is first page.</p>
+        </div>
+    </script>
+
+    <script id="tpl_About2" type="text/x-jsrender">
+        <div class="first">
+            <p>this is first page.</p>
+        </div>
+    </script>
+
+    <script id="tpl_About3" type="text/x-jsrender">
+        <div class="first">
+            <p>this is first page.</p>
+        </div>
+    </script>
+
+
+    <!-- works 페이지 세부 템플릿 -->
+    <script id="tpl_Works" type="text/x-jsrender">
+        <link rel="stylesheet" href="../static/style/works.css"/>
+
+        <div class="works_wrapper" >
+            <div class="head_section head">WORKS</div>
+            <div class="small_nav">
+                <ul>
+                    <li class="works1">HTML/CSS</li>
+                    <li class="works2">SASS/RESPONSIVE</li>
+                    <li class="works3">WORKS</li>
+                    <li class="works4">PROJECT</li>
+                </ul>
+            </div>
+            <div class="content_section"></div>
+        </div>
+    </script>
+
+    <script id="tpl_Works1" type="text/x-jsrender">
+        <div class="works1_container">
+            <div class="cont_box">
+                <div class="cont_img"><img src="../static/images/article_quick.jpg" alt=""/></div>
+                <div class="cont_text">
+                    <h4>Article</h4>
+                    <p>첫 과제</p>
+                </div>
+                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <div class="clear"></div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_img"><img src="../static/images/aqua_quick.jpg" alt=""/></div>
+                <div class="cont_text">
+                    <h4>Aqua</h4>
+                    <p>동적 기능 추가</p>
+                </div>
+                <a href="#"> <button class="btn_go">GO TO SITE</button></a>
+                <div class="clear"></div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_img"><img src="../static/images/movie_quick.jpg" alt=""/></div>
+                <div class="cont_text">
+                    <h4>Movie page</h4>
+                    <p>'크리스마스의 악몽' 영화 페이지</p>
+                </div>
+                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </script>
+
+    <script id="tpl_Works2" type="text/x-jsrender">
+        <div class="works2_container" style="display:none">
+            <div class="cont_box">
+                <div class="cont_img"><img src="../static/images/aware_quick.jpg" alt=""/></div>
+                <div class="cont_text">
+                    <h4>Aware</h4>
+                    <p>sass 활용한 aware wide 버전 </p>
+                </div>
+                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <div class="clear"></div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_img"><img src="../static/images/polio_quick.jpg" alt=""/></div>
+                <div class="cont_text">
+                    <h4>Polio</h4>
+                    <p>반응형 웹 페이지</p>
+                </div>
+                <a href="#"> <button class="btn_go">GO TO SITE</button></a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </script>
+
+    <script id="tpl_Works3" type="text/x-jsrender">
+        <div class="first">
+        <p>this is first page.</p>
+        </div>
+    </script>
+
+    <script id="tpl_Works4" type="text/x-jsrender">
+        <div class="first">
+        <p>this is first page.</p>
+        </div>
+    </script>
+
+
+
+
+</body>
+</html>
