@@ -20,20 +20,17 @@ $(function(){
     // $('.body_wrapper').append(renderTpl('#tpl_Career', {}));
     // $('.body_wrapper').append(renderTpl('#tpl_Contact', {}));
 
-
     $('.navigation .sub_nav li').on('click', function(){
-        var page_name = $(this).parents('li').attr('class').split('_')[1];
-        drawContents(page_name);
+        var page = $(this).parents('li').attr('class').split('_')[1];
+        drawPages(page);
+        drawContents($(this));
     });
 
     $('.small_nav li').on('click', function(){
-        $('.small_nav li.active').removeClass('active');
-        $('.content_section > div').css('display', 'none');
-        var name = $(this).attr('class')+'_container';
-        $('div.'+name).css('display', 'block');
-        $(this).addClass('active');
+        drawContents($(this));
     });
 });
+
 
 // jsrender 함수 정의 //
 function renderTpl(id, obj) {
@@ -43,16 +40,19 @@ function renderTpl(id, obj) {
 	return html;
 }
 
-// Big 페이지 그리는 함수 //
-function drawContents(flag){
-    $('.body_wrapper > div').css('display', 'none');
-    if (flag == 'about') {
-        $('.about_wrapper').css('display', 'block');
-    } else if (flag == 'works') {
-        $('.works_wrapper').css('display', 'block');
-    } else if (flag == 'career') {
-        $('.career_wrapper')
-    } else if (flag == 'contact') {
 
-    }
+// Big 페이지 그리는 함수 //
+function drawPages(flag){
+    $('.body_wrapper > div').css('display', 'none');
+    $('.'+flag+'_wrapper').css('display', 'block');
+}
+
+
+// 세부 페이지 그리는 함수 //
+function drawContents($this){
+    $('li.active').removeClass('active');
+    $('.content_section > div').css('display', 'none');
+    var name = $this.attr('class');
+    $('div.'+name+'_container').css('display', 'block');
+    $('li.'+name).addClass('active');
 }

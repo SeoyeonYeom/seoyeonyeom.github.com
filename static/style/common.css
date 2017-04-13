@@ -74,6 +74,7 @@ button{
 body{
     width: 1200px;
     margin: auto;
+    position: relative;
 }
 .head_section{
     height: 100px;
@@ -99,14 +100,16 @@ body{
     cursor: pointer;
 }
 .small_nav > ul > li.active{
-    color: #f9c5b8;
+    color: #add3d6;
 }
 .content_section{
     margin-left: 300px;
     /*min-width: 1000px;*/
-    background-color: #efefef;
-    min-height: 600px;
+    min-height: 700px;
 }
 .content_section > div{
     width: 100%;
+}
+.back_img{
+    position: absolute;
 }

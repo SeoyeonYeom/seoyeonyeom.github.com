@@ -1,11 +1,20 @@
 
+.works_wrapper .back_img{
+    background: url("../images/cat3a.jpg") no-repeat;
+    background-size: contain;
+    top: 320px;
+    left: 120px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.9;
+}
 
 /* html/css page */
 
 .works_wrapper .works1_container,
 .works_wrapper .works2_container{
     padding-top: 60px;
-    min-height: 600px;
+    min-height: 700px;
 }
 .works_wrapper .cont_box{
     width: 620px;
@@ -145,4 +154,46 @@
 .works3_playing .works3_img p{
     top: 10px;
     right: 20px;
+}
+
+
+/* team project */
+
+.content_section .works4_container{
+    width: 700px;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+.works4_container h4{
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.works4_container h4 span{
+    font-size: 40px;
+    color: #42C7DF;
+    margin-left: 10px;
+}
+.works4_container p{
+    font-size: 14px;
+}
+.works4_container .span_container{
+    height: 80px;
+    line-height: 80px;
+    font-size: 12px;
+}
+.works4_container .span_container span{
+    background-color: #add3d6;
+    padding: 5px 14px;
+    border: 0;
+    border-radius: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.works4_container .video_container{
+    width: 660px;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #000;
 }

@@ -29,10 +29,10 @@
                         <li class="nav_works" id="worksPg">
                             <div>2016</div>
                             <ul class="sub_nav">
-                                <li>HTML/CSS</li>
-                                <li>SASS/RESPONSIVE</li>
-                                <li>FOR FUN WITH JS</li>
-                                <li>TEAM PROJECT</li>
+                                <li class="works1">HTML/CSS</li>
+                                <li class="works2">SASS/RESPONSIVE</li>
+                                <li class="works3">FOR FUN WITH JS</li>
+                                <li class="works4">TEAM PROJECT</li>
                             </ul>
                         </li>
                         <li class="nav_career" id="careerPg">
@@ -46,7 +46,7 @@
             </div>
       </header>
       <div class="body_wrapper">
-            <button type="button" class="button btn_start red" style="display:none">GET START</button>
+          <button type="button" class="button btn_start red" style="display:none">GET START</button>
       </div>
 
 
@@ -63,6 +63,7 @@
                 </ul>
             </div>
             <div class="content_section"></div>
+            <div class="back_img"></div>
         </div>
     </script>
 
@@ -93,13 +94,14 @@
             <div class="head_section head">When I was a very beginner...</div>
             <div class="small_nav">
                 <ul>
-                    <li class="works1">HTML/CSS</li>
+                    <li class="works1 active">HTML/CSS</li>
                     <li class="works2">SASS/RESPONSIVE</li>
                     <li class="works3">FOR FUN WITH JS</li>
                     <li class="works4">TEAM PROJECT</li>
                 </ul>
             </div>
             <div class="content_section"></div>
+            <div class="back_img"></div>
         </div>
     </script>
 
@@ -196,8 +198,19 @@
     </script>
 
     <script id="tpl_Works4" type="text/x-jsrender">
-        <div class="first">
-
+        <div class="works4_container" style="display: none">
+            <h4 class="head">ALL HASHTAGS AROUND ME, <span>'NULL'</span></h4>
+            <p>패스트캠퍼스 팀 프로젝트로 만든 익명 SNS 서비스 웹 페이지입니다. <br> 백엔드 3명, 프론트엔드 1명이 팀으로 함께 작업했습니다.</p>
+            <div class="span_container">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JAVA SCRIPT</span>
+                <span>JQUERY</span>
+                <span>PYTHON</span>
+            </div>
+            <div class="video_container">
+                <video src="../static/video/null_project.mp4" width="100%" height="auto" control="control" autoplay="autoplay"></video>
+            </div>
         </div>
     </script>
 
