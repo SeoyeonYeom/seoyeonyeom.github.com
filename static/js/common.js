@@ -27,9 +27,11 @@ $(function(){
     });
 
     $('.small_nav li').on('click', function(){
+        $('.small_nav li.active').removeClass('active');
         $('.content_section > div').css('display', 'none');
         var name = $(this).attr('class')+'_container';
         $('div.'+name).css('display', 'block');
+        $(this).addClass('active');
     });
 });
 
