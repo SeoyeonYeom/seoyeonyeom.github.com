@@ -110,23 +110,25 @@
 .works3_container a{
     position: relative;
     display: inline-block;
-    border: 2.5px solid #000;
-    width: 280px;
-    height: 240px;
 }
 .works3_container .works3_img{
     width: 280px;
     height: 240px;
     overflow: hidden;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    opacity: 0.9;
 }
-.works3_container .works3_img:hover{
+.works3_container .works3_img:hover .background{
     top: 0px;
     left: 0px;
     transition: all, 0.2s;
+}
+.works3_container .background{
+    background-color: #999;
+    position: absolute;
+    width: 280px;
+    height: 240px;
+    top: 6px;
+    left: 6px;
+    z-index: -1;
 }
 .works3_img img{
     width: 120%;
