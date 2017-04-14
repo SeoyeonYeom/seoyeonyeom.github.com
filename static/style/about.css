@@ -1,0 +1,68 @@
+
+.about_wrapper .back_img{
+    background: url("../images/cat3a.jpg") no-repeat;
+    background-size: contain;
+    top: -10px;
+    right: -20px;
+    width: 140px;
+    height: 140px;
+}
+
+
+/* about 페이지 */
+
+.content_section .about1_container,
+.content_section .about2_container,
+.content_section .about3_container{
+    width: 100%;
+}
+.content_section .about1_container{
+    padding-top: 20px;
+}
+.about1_container .cont_img{
+    width: 300px;
+    height: 459px;
+    position: relative;
+    border: 3px solid #000;
+}
+.about1_container .my_img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 301px;
+    height: 458px;
+}
+
+
+/* history 페이지 */
+
+.content_section .about2_container{
+    padding-top: 70px;
+}
+.about2_container h3{
+    font-size: 34px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+.about2_container .career_box{
+    margin-bottom: 50px;
+}
+.about2_container .cont_text{
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.about2_container h4{
+    font-weight: 700;
+    font-size: 16px;
+    float: left;
+}
+.about2_container .cont_text .date{
+    font-style: italic;
+    font-size: 16px;
+    color: #999;
+    margin-left: 25px;
+}
+.about2_container .cont_text p{
+    padding-left: 10px;
+}

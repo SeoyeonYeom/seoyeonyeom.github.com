@@ -17,8 +17,16 @@ $(function(){
 
     $('.body_wrapper').append(renderTpl('#tpl_About', {}));
     $('.body_wrapper').append(renderTpl('#tpl_Works', {}));
-    // $('.body_wrapper').append(renderTpl('#tpl_Career', {}));
-    // $('.body_wrapper').append(renderTpl('#tpl_Contact', {}));
+    $('.body_wrapper').append(renderTpl('#tpl_Career', {}));
+    $('.body_wrapper').append(renderTpl('#tpl_Contact', {}));
+
+    $('.navigation > ol > li > div').on('click', function(){
+        var page = $(this).parent('li').attr('class').split('_')[1];
+        drawPages(page);
+        if ($(this).parent('li').children('ul.sub_nav').length > 0){
+            drawContents($(this).parent('li').find('li').eq(0));
+        }
+    });
 
     $('.navigation .sub_nav li').on('click', function(){
         var page = $(this).parents('li').attr('class').split('_')[1];

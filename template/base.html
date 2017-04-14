@@ -8,8 +8,11 @@
       <link href="../static/style/base.css" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.84/jsrender.min.js"></script>
+      <script src="https://use.fontawesome.com/db374d7261.js"></script>
       <script src="../static/js/common.js"></script>
+      <script src="../static/js/about.js"></script>
       <script src="../static/js/works.js"></script>
+      <script src="../static/js/career.js"></script>
       <title>My Page</title>
 </head>
 <body>
@@ -21,9 +24,9 @@
                         <li class="nav_about" id="aboutPg">
                             <div>PROFILE</div>
                             <ul class="sub_nav">
-                                <li>ABOUT</li>
-                                <li>EDUCATION</li>
-                                <li>RESUME</li>
+                                <li class="about1">ABOUT</li>
+                                <li class="about2">HISTORY</li>
+                                <li class="about3">RESUME</li>
                             </ul>
                         </li>
                         <li class="nav_works" id="worksPg">
@@ -31,12 +34,15 @@
                             <ul class="sub_nav">
                                 <li class="works1">HTML/CSS</li>
                                 <li class="works2">SASS/RESPONSIVE</li>
-                                <li class="works3">FOR FUN WITH JS</li>
+                                <li class="works3">FUN WITH JS</li>
                                 <li class="works4">TEAM PROJECT</li>
                             </ul>
                         </li>
                         <li class="nav_career" id="careerPg">
-                            <div>2017</div>
+                            <div class="career">2017</div>
+                            <ul class="sub_nav">
+                                <li class="career">BRINGPRICE</li>
+                            </ul>
                         </li>
                         <li class="nav_contact" id="contactPg">
                             <div>CONTACT</div>
@@ -53,13 +59,15 @@
 
     <!-- about 페이지 세부 템플릿 -->
     <script id="tpl_About" type="text/x-jsrender">
-        <div class="about_wrapper" style="display:none">
-            <div class="head_section head">MY PROFILE</div>
+        <link rel="stylesheet" href="../static/style/about.css"/>
+
+        <div class="about_wrapper" style="display: none">
+            <div class="head_section head">My Profile</div>
             <div class="small_nav">
                 <ul>
-                    <li>ABOUT</li>
-                    <li>EDUCATION</li>
-                    <li>RESUME</li>
+                    <li class="about1 active">ABOUT</li>
+                    <li class="about2">HISTORY</li>
+                    <li class="about3">RESUME</li>
                 </ul>
             </div>
             <div class="content_section"></div>
@@ -68,19 +76,54 @@
     </script>
 
     <script id="tpl_About1" type="text/x-jsrender">
-        <div class="first">
-            <p>this is first page.</p>
+        <div class="about1_container">
+            <div class="cont_img">
+                <img class="my_img" src="../static/images/profile.jpg" width="100%" height="auto" alt="내 사진"/>
+            </div>
+            <div class="cont_text">
+
+            </div>
         </div>
     </script>
 
     <script id="tpl_About2" type="text/x-jsrender">
-        <div class="first">
-            <p>this is first page.</p>
+        <div class="about2_container" style="display:none">
+            <div class="career_box">
+                <h3 class="head">WORK EXPERIENCE</h3>
+                <div class="cont_text">
+                    <h4>(주)브링프라이스</h4>
+                    <span class="date">2017/01 ~ 2017/04</span>
+                    <p>&#42; 개발팀 / 주니어 프론트엔드 개발자</p>
+                </div>
+                <div class="cont_text">
+                    <h4>넥스트엔터테인먼트월드</h4>
+                    <span class="date">2015/01 ~ 2016/08</span>
+                    <p>&#42; 마케팅팀 / 사원</p>
+                </div>
+            </div>
+            <div class="education_box">
+            <h3 class="head">EDUCATION</h3>
+                <div class="cont_text">
+                    <h4>FAST CAMPUS</h4>
+                    <span class="date">2016/09 ~ 2016/12</span>
+                    <p>&#42; 프론트엔드 개발 스쿨 2기 수료</p>
+                </div>
+                <div class="cont_text">
+                    <h4>SOGANG UNIVERSITY</h4>
+                    <span class="date">2008/03 ~ 2015/02</span>
+                    <p>&#42; 경영학 전공 (3.24 / 4.3)</p>
+                </div>
+                <div class="cont_text">
+                    <h4>QUEENS COLLEGE (NY)</h4>
+                    <span class="date">2012/09 ~ 2013/01</span>
+                    <p>&#42; English Language Institute 과정 수료</p>
+                </div>
+            </div>
         </div>
     </script>
 
     <script id="tpl_About3" type="text/x-jsrender">
-        <div class="first">
+        <div class="about3_container" style="display:none">
             <p>this is first page.</p>
         </div>
     </script>
@@ -90,13 +133,13 @@
     <script id="tpl_Works" type="text/x-jsrender">
         <link rel="stylesheet" href="../static/style/works.css"/>
 
-        <div class="works_wrapper" >
+        <div class="works_wrapper" style="display: none">
             <div class="head_section head">When I was a very beginner...</div>
             <div class="small_nav">
                 <ul>
                     <li class="works1 active">HTML/CSS</li>
                     <li class="works2">SASS/RESPONSIVE</li>
-                    <li class="works3">FOR FUN WITH JS</li>
+                    <li class="works3">FUN WITH JS</li>
                     <li class="works4">TEAM PROJECT</li>
                 </ul>
             </div>
@@ -110,7 +153,7 @@
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/article_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
-                    <h4>Article</h4>
+                    <h4>ARTICLE</h4>
                     <p>패스트캠퍼스 첫 과제로, 기본 HTML/CSS만을 사용한 단일 페이지입니다.</p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
@@ -119,7 +162,7 @@
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/aqua_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
-                    <h4>Aqua</h4>
+                    <h4>AQUA</h4>
                     <p>기본 뷰 페이지에 JS로 간단한 동적 효과를 구현했습니다.</p>
                 </div>
                 <a href="#"> <button class="btn_go">GO TO SITE</button></a>
@@ -128,7 +171,7 @@
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/movie_quick.jpg" alt="화면 썸네일"/></div>
                 <div class="cont_text">
-                    <h4>Movie page</h4>
+                    <h4>MOVIE PAGE</h4>
                     <p>영화 '크리스마스의 악몽' 선재들로 구성한 단일 페이지입니다.</p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
@@ -142,7 +185,7 @@
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/aware_quick.jpg" alt=""/></div>
                 <div class="cont_text">
-                    <h4>Aware 1920</h4>
+                    <h4>AWARE 1920</h4>
                     <p>SASS를 활용한 쇼핑몰 페이지뷰입니다. </p>
                 </div>
                 <a href="#"><button class="btn_go">GO TO SITE</button></a>
@@ -151,7 +194,7 @@
             <div class="cont_box">
                 <div class="cont_img"><img src="../static/images/polio_quick.jpg" alt=""/></div>
                 <div class="cont_text">
-                    <h4>Polio</h4>
+                    <h4>POLIO</h4>
                     <p>웹, 태블릿, 모바일을 지원하는 3단계 반응형 과제입니다.</p>
                 </div>
                 <a href="#"> <button class="btn_go">GO TO SITE</button></a>
@@ -211,6 +254,88 @@
             <div class="video_container">
                 <video src="../static/video/null_project.mp4" width="100%" height="auto" control="control" autoplay="autoplay"></video>
             </div>
+        </div>
+    </script>
+
+
+    <!-- career 페이지 세부 템플릿 -->
+    <script id="tpl_Career" type="text/x-jsrender">
+        <link rel="stylesheet" href="../static/style/career.css"/>
+
+        <div class="career_wrapper">
+            <div class="head_section head">Things that I have done...</div>
+            <div class="career_container">
+                <div class="box1">
+                    <h3 class="head">BRINGPRICE</h3>
+                    <div class="cont_img">
+                        <div class="slide">
+                            <div class="slide_all">
+                                <img src="../static/images/bring1.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                <img src="../static/images/bring2.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                <img src="../static/images/bring3.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                <img src="../static/images/bring6.jpg" alt="브링프라이스 모바일 페이지 이미지"/>
+                            </div>
+                        </div>
+                        <div class="btn_slide">
+                            <button type="button" class="btn_prev disabled"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></button>
+                            <button type="button" class="btn_next"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                    <div class="cont_text">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>상용화 서비스 웹/모바일 사이트 유지보수</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>네이티브 자바스크립트를 이용한 달력 디자인/기능 구현</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>JS RENDER 템플릿, JQUERY UI, JQUERY COOKIE 등 활용</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>AJAX로 데이터 전송 및 렌더링 구현</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>서버 쪽 PYTHON, FLASK 코드 활용, 한/영 Translate 기능 구현</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>사파리, 파이어폭스, 익스플로러 9 이상 버전 크로스 브라우징</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>GIT FLOW를 이용한 버전관리, 협업 진행</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="box2">
+                    <h3 class="head">B2B DASHBOARD</h3>
+                    <div class="cont_text">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>B2B 사업자용 결과 보고 페이지(대시보드) 디자인/기능 구현</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Google Chart 라이브러리 활용</li>
+                        </ul>
+                    </div>
+                    <div class="cont_img"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="box3">
+                    <h3 class="head">B2B 여행박사</h3>
+                    <div class="cont_img"></div>
+                    <div class="cont_text">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>여행박사 웹/모바일 페이지 내 다구간 서비스 개발 진행</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="back_img"></div>
+        </div>
+    </script>
+
+
+    <!-- contact 페이지 세부 템플릿 -->
+    <script id="tpl_Contact" type="text/x-jsrender">
+        <link rel="stylesheet" href="../static/style/contact.css"/>
+
+        <div class="contact_wrapper" style="display:none">
+            <div class="head_section head">CONTACT</div>
+            <div class="contact_box button red">
+                <ul class="info_list">
+                    <li class="head">EMAIL : <span>sy8095@gmail.com</span></li>
+                    <li class="head">GITHUB : <span></span></li>
+                    <li class="head">PHONE : <span>010-2363-8095</span></li>
+                    <li class="head">KAKAO : <span>sy8095</span></li>
+                </ul>
+            </div>
+            <div class="back_img"></div>
         </div>
     </script>
 

@@ -1,12 +1,11 @@
 
 .works_wrapper .back_img{
-    background: url("../images/cat3a.jpg") no-repeat;
+    background: url("../images/cat6a.png") no-repeat;
     background-size: contain;
-    top: 320px;
-    left: 120px;
+    top: 310px;
+    left: -150px;
     width: 200px;
     height: 200px;
-    opacity: 0.9;
 }
 
 /* html/css page */
@@ -71,7 +70,7 @@
 }
 .works_wrapper .cont_text h4{
     font-size: 28px;
-    color: #add3d6;
+    color: #000;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -184,7 +183,8 @@
     font-size: 12px;
 }
 .works4_container .span_container span{
-    background-color: #add3d6;
+    background-color: #2EB6D0;
+    color: #fff;
     padding: 5px 14px;
     border: 0;
     border-radius: 30px;
