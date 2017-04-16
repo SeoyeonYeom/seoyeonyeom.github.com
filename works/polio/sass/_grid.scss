@@ -1,0 +1,97 @@
+
+/* mobile 4 grid */
+
+@media screen and (max-width: 750px){
+  .col-m-1 { width: 25% };
+  .col-m-2 { width: 50% };
+  .col-m-3 { width: 75% };
+  .col-m-4 { width: 100% };
+
+  .suffix-m-1 { margin-left: 25% };
+  .suffix-m-2 { margin-left: 50% };
+  .suffix-m-3 { margin-left: 75% };
+  .suffix-m-4 { margin-left: 100% };
+
+  .prefix-m-1 { margin-right: 25% };
+  .prefix-m-1 { margin-right: 50% };
+  .prefix-m-1 { margin-right: 75% };
+  .prefix-m-1 { margin-right: 100% };
+}
+
+
+/* tablet 8 grid */
+
+@media screen and (min-width: 750px) and (max-width: 1024px){
+  .col-t-1 { width: 12.5% };
+  .col-t-2 { width: 25% };
+  .col-t-3 { width: 37.5% };
+  .col-t-4 { width: 50% };
+  .col-t-5 { width: 62.5% };
+  .col-t-6 { width: 75% };
+  .col-t-7 { width: 87.5% };
+  .col-t-8 { width: 100% };
+
+  .suffix-t-1 { margin-left: 12.5% };
+  .suffix-t-2 { margin-left: 25% };
+  .suffix-t-3 { margin-left: 37.5% };
+  .suffix-t-4 { margin-left: 50% };
+  .suffix-t-5 { margin-left: 62.5% };
+  .suffix-t-6 { margin-left: 75% };
+  .suffix-t-7 { margin-left: 87.5% };
+  .suffix-t-8 { margin-left: 100% };
+
+  .prefix-t-1 { margin-right: 12.5% };
+  .prefix-t-2 { margin-right: 25% };
+  .prefix-t-3 { margin-right: 37.5% };
+  .prefix-t-4 { margin-right: 50% };
+  .prefix-t-5 { margin-right: 62.5% };
+  .prefix-t-6 { margin-right: 75% };
+  .prefix-t-7 { margin-right: 87.5% };
+  .prefix-t-8 { margin-right: 100% };
+
+
+}
+
+
+/* desktop 12 grid */
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+  .col-d-1 { width: 8.333% };
+  .col-d-2 { width: 16.667% };
+  .col-d-3 { width: 25% };
+  .col-d-4 { width: 33.333% };
+  .col-d-5 { width: 41.667% };
+  .col-d-6 { width: 50% };
+  .col-d-7 { width: 58.333% };
+  .col-d-8 { width: 66.667% };
+  .col-d-9 { width: 75% };
+  .col-d-10 { width: 83.333% };
+  .col-d-11 { width: 91.667% };
+  .col-d-12 { width: 100% };
+
+  .suffix-d-1 { margin-left: 8.333% };
+  .suffix-d-2 { margin-left: 16.667% };
+  .suffix-d-3 { margin-left: 25% };
+  .suffix-d-4 { margin-left: 33.333% };
+  .suffix-d-5 { margin-left: 41.667% };
+  .suffix-d-6 { margin-left: 50% };
+  .suffix-d-7 { margin-left: 58.333% };
+  .suffix-d-8 { margin-left: 66.667% };
+  .suffix-d-9 { margin-left: 75% };
+  .suffix-d-10 { margin-left: 83.333% };
+  .suffix-d-11 { margin-left: 91.667% };
+  .suffix-d-12 { margin-left: 100% };
+
+  .prefix-d-1 { margin-right: 8.333% };
+  .prefix-d-2 { margin-right: 16.667% };
+  .prefix-d-3 { margin-right: 25% };
+  .prefix-d-4 { margin-right: 33.333% };
+  .prefix-d-5 { margin-right: 41.667% };
+  .prefix-d-6 { margin-right: 50% };
+  .prefix-d-7 { margin-right: 58.333% };
+  .prefix-d-8 { margin-right: 66.667% };
+  .prefix-d-9 { margin-right: 75% };
+  .prefix-d-10 { margin-right: 83.333% };
+  .prefix-d-11 { margin-right: 91.667% };
+  .prefix-d-12 { margin-right: 100% };
+}

@@ -10,11 +10,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.84/jsrender.min.js"></script>
       <script src="https://use.fontawesome.com/db374d7261.js"></script>
       <script src="../static/js/common.js"></script>
-      <script src="../static/js/about.js"></script>
-      <script src="../static/js/works.js"></script>
-      <script src="../static/js/career.js"></script>
-      <script src="../static/js/contact.js"></script>
-      <title>My Page</title>
+      <script src="../static/js/additional.js"></script>
+      <title>Galaxy Tourist</title>
 </head>
 <body>
       <header>
@@ -53,7 +50,7 @@
             </div>
       </header>
       <div class="body_wrapper">
-          <button type="button" class="button btn_start red" style="display:none">GET START</button>
+          <button type="button" class="button btn_start red head">GET START</button>
       </div>
 
 
@@ -62,7 +59,7 @@
     <script id="tpl_About" type="text/x-jsrender">
         <link rel="stylesheet" href="../static/style/about.css"/>
 
-        <div class="about_wrapper">
+        <div class="about_wrapper" style="display: none">
             <div class="head_section head">My Profile</div>
             <div class="small_nav">
                 <ul>
@@ -200,7 +197,7 @@
                     <h4>ARTICLE</h4>
                     <p>패스트캠퍼스 첫 과제로, 기본 HTML/CSS만을 사용한 단일 페이지입니다.</p>
                 </div>
-                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <a href="../works/article/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
             <div class="cont_box">
@@ -209,7 +206,7 @@
                     <h4>AQUA</h4>
                     <p>기본 뷰 페이지에 JS로 간단한 동적 효과를 구현했습니다.</p>
                 </div>
-                <a href="#"> <button class="btn_go">GO TO SITE</button></a>
+                <a href="../works/aqua/index.html" target="blank"> <button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
             <div class="cont_box">
@@ -218,7 +215,7 @@
                     <h4>MOVIE PAGE</h4>
                     <p>영화 '크리스마스의 악몽' 선재들로 구성한 단일 페이지입니다.</p>
                 </div>
-                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <a href="../works/movie/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
         </div>
@@ -232,7 +229,7 @@
                     <h4>AWARE 1920</h4>
                     <p>SASS를 활용한 쇼핑몰 페이지뷰입니다. </p>
                 </div>
-                <a href="#"><button class="btn_go">GO TO SITE</button></a>
+                <a href="../works/aware/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
             <div class="cont_box">
@@ -241,7 +238,7 @@
                     <h4>POLIO</h4>
                     <p>웹, 태블릿, 모바일을 지원하는 3단계 반응형 과제입니다.</p>
                 </div>
-                <a href="#"> <button class="btn_go">GO TO SITE</button></a>
+                <a href="../works/polio/index.html" target="blank"> <button class="btn_go">GO TO SITE</button></a>
                 <div class="clear"></div>
             </div>
         </div>
@@ -250,7 +247,7 @@
     <script id="tpl_Works3" type="text/x-jsrender">
         <div class="works3_container" style="display: none">
             <div class="works3_ironman">
-                <a href="">
+                <a href="../works/ironman/function.html" target="blank">
                     <div class="works3_img">
                         <img src="../static/images/ironman.jpg" alt="아이언맨 이미지"/>
                         <p>IRONMAN</p>
@@ -259,7 +256,7 @@
                 </a>
             </div>
             <div class="works3_matrix">
-                <a href="">
+                <a href="../works/matrix/drop.html" target="blank">
                     <div class="works3_img">
                         <img src="../static/images/matrix.jpg" alt="매트릭스 영화 이미지"/>
                         <p>MATRIX</p>
@@ -268,7 +265,7 @@
                 </a>
             </div>
             <div class="works3_game">
-                <a href="">
+                <a href="../works/hangman/index.html" target="blank">
                     <div class="works3_img">
                         <img src="../static/images/hang.jpg" alt="행맨 게임 이미지"/>
                         <p>HANGMAN</p>
@@ -277,7 +274,7 @@
                 </a>
             </div>
             <div class="works3_playing">
-                <a href="">
+                <a href="../works/musicPlaying/mystyling.html" target="blank">
                     <div class="works3_img">
                         <img src="../static/images/music.jpg" alt="음악 아이콘 이미지"/>
                         <p>MUSIC PLAYING</p>
@@ -300,7 +297,7 @@
                 <span>PYTHON</span>
             </div>
             <div class="video_container">
-                <video src="../static/video/null_project.mp4" width="100%" height="auto" control="control" autoplay="autoplay"></video>
+                <embed width="672" height="378" src="http://www.youtube.com/v/yBalgmJ_sE0&vq=hd720&autoplay=1&start=60&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"></embed>
             </div>
         </div>
     </script>
@@ -315,6 +312,7 @@
             <div class="career_container">
                 <div class="box1">
                     <h3 class="head">BRINGPRICE</h3>
+                    <p><a href="https://bringprice.com" target="blank">https://bringprice.com</a></p>
                     <div class="cont_img">
                         <div class="slide">
                             <div class="slide_all">
@@ -325,8 +323,8 @@
                             </div>
                         </div>
                         <div class="btn_slide">
-                            <button type="button" class="btn_prev disabled"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></button>
-                            <button type="button" class="btn_next"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></button>
+                            <button type="button" class="btn_prev disabled"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></button>
+                            <button type="button" class="btn_next"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></button>
                         </div>
                     </div>
                     <div class="cont_text">
@@ -335,7 +333,6 @@
                             <li><i class="fa fa-check" aria-hidden="true"></i>네이티브 자바스크립트를 이용한 달력 디자인/기능 구현</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>JS RENDER 템플릿, JQUERY UI, JQUERY COOKIE 등 활용</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>AJAX로 데이터 전송 및 렌더링 구현</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>서버 쪽 PYTHON, FLASK 코드 활용, 한/영 Translate 기능 구현</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>사파리, 파이어폭스, 익스플로러 9 이상 버전 크로스 브라우징</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>GIT FLOW를 이용한 버전관리, 협업 진행</li>
                         </ul>
@@ -355,7 +352,9 @@
                 </div>
                 <div class="box3">
                     <h3 class="head">B2B 여행박사</h3>
-                    <div class="cont_img"></div>
+                    <div class="cont_img">
+                        <div class="slide"><img src="../static/images/tourbaksa.jpg" alt="여행박사 사이트 이미지" width="100%" height="100%"/></div>
+                    </div>
                     <div class="cont_text">
                         <ul>
                             <li><i class="fa fa-check" aria-hidden="true"></i>여행박사 웹/모바일 페이지 내 다구간 서비스 개발 진행</li>

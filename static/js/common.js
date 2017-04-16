@@ -34,6 +34,10 @@ $(function(){
         drawContents($(this));
     });
 
+    $('.body_wrapper button.btn_start').on('click', function(){
+        $('.navigation .sub_nav li.about1').click();
+    });
+
     $('.small_nav li').on('click', function(){
         drawContents($(this));
     });
@@ -52,6 +56,7 @@ function renderTpl(id, obj) {
 // Big 페이지 그리는 함수 //
 function drawPages(flag){
     $('.body_wrapper > div').css('display', 'none');
+    $('.body_wrapper button.btn_start').css('display', 'none');
     $('.'+flag+'_wrapper').css('display', 'block');
 }
 

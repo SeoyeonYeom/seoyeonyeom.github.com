@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Raining letters</title>
+</head>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background: #000;
+	}
+	#background{
+		display: block;
+	}
+</style>
+<body>
+
+<canvas id="background"></canvas>
+	
+<script>
+	var bg = document.getElementById('background');
+	var bg_context = bg.getContext('2d');
+
+	bg.height = window.innerHeight;
+	bg.width = window.innerWidth;
+
+	var letter = "畇东畈畑汉畀甽甾甿畀畂畃畅潮州话畊界畍江省畋畐";
+	letter = letter.split("");
+
+	var font_size = 20;
+	var column = bg.width/font_size;
+
+	var drop= []; 
+	//여기에는 모든 x축(컬럼)들의 y 좌표가 담김, 각 값은 모두 1
+	// 각 글자들의 x, y 좌표 설정
+	for ( var x=0; x<column; x++ ) {
+		drop[x] = 1;
+		//어떤 x값이 들어와도 y값은 1에서 시작함 (맨 윗줄부터)
+	}
+
+	function raining(){
+		bg_context.fillStyle = 'rgba(0, 0, 0, 0.08)';
+		//배경색 설정
+		bg_context.fillRect(0, 0, bg.width, bg.height);
+		bg_context.fillStyle = '#0f0';
+		bg_context.font = font_size + 'px arial';
+
+		for ( var i=0; i<drop.length; i++ ) {
+			var text = letter[Math.floor(Math.random()*letter.length)];
+			bg_context.fillText(text, i*font_size, drop[i]*font_size);
+			//전체 글자 수 안에서 랜덤으로 N번째 글자를 빼낸다음, 
+			// 그 글자를 text값에 넣는다. 
+			// fillText(보여질글씨, x좌표, y좌표)
+			if (drop[i]*font_size > bg.height && Math.random() > 0.975) 
+				drop[i] = 0;
+			//(만약 y 좌표가 화면 밑단에 닿으면, y좌표가 다시 리셋됨)
+			//각 글자들이 계속 유성처럼 떨어지게 만듦	
+			//if문 없으면 한번 로딩되고 다시 나오지 않음
+				drop[i]++;
+				//각 컬럼의 글자들이 아래로 떨어지게 만듦
+				//drop[i]++ 없으면 맨 1번째 줄에서만 글자들이 순환함
+			}
+	}
+	setInterval(raining, 45);
+	
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+	var getRandom = function(number) {
+		return Math.floor(Math.random() * number);
+	}
+
+	for ( var i=0; i<letter_array.length; i++ ) {
+			var text_number = getRandom(letter.length);
+			var text = letter.substring(0, text_number);
+			bg_context.fillText(text, i*font_size, letter_array[i]*font_size);
+

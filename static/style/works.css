@@ -1,11 +1,11 @@
 
 .works_wrapper .back_img{
-    background: url("../images/cat6a.png") no-repeat;
+    background: url("../images/back1.png") no-repeat;
     background-size: contain;
-    top: 310px;
-    left: -150px;
-    width: 200px;
-    height: 200px;
+    top: 320px;
+    left: -28%;
+    width: 450px;
+    height: 450px;
 }
 
 /* html/css page */
@@ -194,8 +194,8 @@
     margin-right: 3px;
 }
 .works4_container .video_container{
-    width: 660px;
-    height: auto;
+    width: 672px;
+    height: 378px;
     overflow: hidden;
     border: 3px solid #000;
 }
