@@ -4,399 +4,235 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="./static/style/common.css" rel="stylesheet">
-      <link href="./static/style/base.css" rel="stylesheet">
+      <link href="./static/style/index.css" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.84/jsrender.min.js"></script>
       <script src="https://use.fontawesome.com/db374d7261.js"></script>
-      <script src="./static/js/common.js"></script>
-      <script src="./static/js/additional.js"></script>
-      <title>Galaxy Tourist</title>
+      <script src="./static/js/index.js"></script>
+      <title>My Name Is SY</title>
 </head>
 <body>
-      <header>
-            <div class="head_wrapper">
-                <div class="main_img"><img src="./static/images/cat-icon.png" alt="고양이 아이콘"></div>
-                <nav class="navigation">
-                    <ol>
-                        <li class="nav_about" id="aboutPg">
-                            <div>PROFILE</div>
-                            <ul class="sub_nav">
-                                <li class="about1">ABOUT</li>
-                                <li class="about2">HISTORY</li>
-                                <li class="about3">RESUME</li>
-                            </ul>
-                        </li>
-                        <li class="nav_works" id="worksPg">
-                            <div>2016</div>
-                            <ul class="sub_nav">
-                                <li class="works1">HTML/CSS</li>
-                                <li class="works2">SASS/RESPONSIVE</li>
-                                <li class="works3">FUN WITH JS</li>
-                                <li class="works4">TEAM PROJECT</li>
-                            </ul>
-                        </li>
-                        <li class="nav_career" id="careerPg">
-                            <div class="career">2017</div>
-                            <ul class="sub_nav">
-                                <li class="career">BRINGPRICE</li>
-                            </ul>
-                        </li>
-                        <li class="nav_contact" id="contactPg">
-                            <div>CONTACT</div>
-                        </li>
-                    </ol>
-                </nav>
+    <div class="body_wrapper">
+        <header class="header">
+            <div class="img_header">
+                <img src="static/images/cat8p.png" alt="cat">
             </div>
-      </header>
-      <div class="body_wrapper">
-          <button type="button" class="button btn_start red head">GET START</button>
-      </div>
-
-
-
-    <!-- about 페이지 세부 템플릿 -->
-    <script id="tpl_About" type="text/x-jsrender">
-        <link rel="stylesheet" href="./static/style/about.css"/>
-
-        <div class="about_wrapper" style="display: none">
-            <div class="head_section head">My Profile</div>
-            <div class="small_nav">
-                <ul>
-                    <li class="about1 active">ABOUT</li>
-                    <li class="about2">HISTORY</li>
-                    <li class="about3">RESUME</li>
-                </ul>
-            </div>
-            <div class="content_section"></div>
-            <div class="back_img"></div>
-        </div>
-    </script>
-
-    <script id="tpl_About1" type="text/x-jsrender">
-        <div class="about1_container">
-            <div class="cont_img">
-                <img class="my_img" src="./static/images/profile.jpg" alt="내 사진"/>
-                <div class="background"></div>
-            </div>
-            <div class="cont_text">
+            <nav class="navigation">
                 <ol>
-                    <li>
-                        <div class="year"><div class="circle"><span>2008</span></div></div>
-                        <div class="word">
-                            <p>철없던 스무살, 대학에 입학했으니 원없이 놀아도 되는 줄 알았다.
-                            <br>낮술과 땡땡이를 반복하다 엄마에게 난생 처음 각목으로 맞았다.
-                            <br>전공도 아닌 세계대전사를 가장 재밌게 공부했고 다양한 교양을 섭렵했다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year"><div class="circle"><span>2012</span></div></div>
-                        <div class="word">
-                            <p>훌쩍 날아간 뉴욕에서 인턴을 하고, 카페 알바를 하고, 낭만을 키웠다.
-                            <br>단순한 영어 몇 마디가 아니라 유연하게 생각하고 크게 보는 법을 배웠다.
-                            <br>한국에서 당연시 여겨지던 몇몇 가치들은 알고보니 전혀 당연하지 않았다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year"><div class="circle"><span>2015</span></div></div>
-                        <div class="word">
-                            <p>영화 배급사에서 마케팅 일을 시작했다.
-                            <br>치열했던 1년 8개월동안 폭풍 멀티태스킹 능력, 엄청난 스피드,
-                            <br>12시간의 행사에도 끄떡없는 체력과 극강의 꼼꼼함을 얻었지만
-                            <br>대신 젊음을 잃고 다크써클도 함께 얻었다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year"><div class="circle"><span>2016</span></div></div>
-                        <div class="word">
-                            <p>번아웃이 왔다. 끌려가는 삶 말고 내 인생을 살고 싶었다.
-                            <br>안정적인 월급은 있었지만, 그것만으로 버티기에는 내 시간이 아까웠다.
-                            <br>회사에서 뭐라든 사표를 내고 새로운 공부를 시작했다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year"><div class="circle"><span>2017</span></div></div>
-                        <div class="word">
-                            <p>조금씩 자리잡아 간다고 생각하던 즈음 또 다른 변수가 생겼다.
-                            <br>주변에서는 자꾸 겁을 주고, 혹시 올해 아홉수인가 싶은 걱정도 생기지만
-                            <br>그보다는 낙천적인 성향이 더 강해서 씩씩하게 구직중이다.</p>
-                        </div>
-                    </li>
+                    <li><a href="#">MAIN</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#career">CAREER</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ol>
-            </div>
-        </div>
-    </script>
-
-    <script id="tpl_About2" type="text/x-jsrender">
-        <div class="about2_container" style="display:none">
-            <div class="career_box">
-                <h3 class="head">WORK EXPERIENCE</h3>
-                <div class="cont_text">
-                    <h4>(주)브링프라이스</h4>
-                    <span class="date">2017/01 ~ 2017/04</span>
-                    <p>&#42; 개발팀 / 주니어 프론트엔드 개발자</p>
-                </div>
-                <div class="cont_text">
-                    <h4>넥스트엔터테인먼트월드</h4>
-                    <span class="date">2015/01 ~ 2016/08</span>
-                    <p>&#42; 마케팅팀 / 사원</p>
-                </div>
-            </div>
-            <div class="education_box">
-            <h3 class="head">EDUCATION</h3>
-                <div class="cont_text">
-                    <h4>FAST CAMPUS</h4>
-                    <span class="date">2016/09 ~ 2016/12</span>
-                    <p>&#42; 프론트엔드 개발 스쿨 2기 수료</p>
-                </div>
-                <div class="cont_text">
-                    <h4>SOGANG UNIVERSITY</h4>
-                    <span class="date">2008/03 ~ 2015/02</span>
-                    <p>&#42; 경영학 전공 (3.24 / 4.3)</p>
-                </div>
-                <div class="cont_text">
-                    <h4>QUEENS COLLEGE (NY)</h4>
-                    <span class="date">2012/09 ~ 2013/01</span>
-                    <p>&#42; English Language Institute 과정 수료</p>
-                </div>
-            </div>
-        </div>
-    </script>
-
-    <script id="tpl_About3" type="text/x-jsrender">
-        <div class="about3_container" style="display:none">
-            <div class="spinner">
-                <div class="loader"></div>
-                <p class="ko">준비중입니다.<br>조금만 기다려주세요 :)</p>
-            </div>
-        </div>
-    </script>
-
-
-    <!-- works 페이지 세부 템플릿 -->
-    <script id="tpl_Works" type="text/x-jsrender">
-        <link rel="stylesheet" href="./static/style/works.css"/>
-
-        <div class="works_wrapper" style="display: none">
-            <div class="head_section head">When I was a very beginner...</div>
-            <div class="small_nav">
-                <ul>
-                    <li class="works1 active">HTML/CSS</li>
-                    <li class="works2">SASS/RESPONSIVE</li>
-                    <li class="works3">FUN WITH JS</li>
-                    <li class="works4">TEAM PROJECT</li>
-                </ul>
-            </div>
-            <div class="content_section"></div>
-            <div class="back_img"></div>
-        </div>
-    </script>
-
-    <script id="tpl_Works1" type="text/x-jsrender">
-        <div class="works1_container">
-            <div class="cont_box">
-                <div class="cont_img"><img src="./static/images/article_quick.jpg" alt="화면 썸네일"/></div>
-                <div class="cont_text">
-                    <h4>ARTICLE</h4>
-                    <p>패스트캠퍼스 첫 과제로, 기본 HTML/CSS만을 사용한 단일 페이지입니다.</p>
-                </div>
-                <a href="./works/article/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
-                <div class="clear"></div>
-            </div>
-            <div class="cont_box">
-                <div class="cont_img"><img src="./static/images/aqua_quick.jpg" alt="화면 썸네일"/></div>
-                <div class="cont_text">
-                    <h4>AQUA</h4>
-                    <p>기본 뷰 페이지에 JS로 간단한 동적 효과를 구현했습니다.</p>
-                </div>
-                <a href="./works/aqua/index.html" target="blank"> <button class="btn_go">GO TO SITE</button></a>
-                <div class="clear"></div>
-            </div>
-            <div class="cont_box">
-                <div class="cont_img"><img src="./static/images/movie_quick.jpg" alt="화면 썸네일"/></div>
-                <div class="cont_text">
-                    <h4>MOVIE PAGE</h4>
-                    <p>영화 '크리스마스의 악몽' 선재들로 구성한 단일 페이지입니다.</p>
-                </div>
-                <a href="./works/movie/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </script>
-
-    <script id="tpl_Works2" type="text/x-jsrender">
-        <div class="works2_container" style="display: none">
-            <div class="cont_box">
-                <div class="cont_img"><img src="./static/images/aware_quick.jpg" alt=""/></div>
-                <div class="cont_text">
-                    <h4>AWARE 1920</h4>
-                    <p>SASS를 활용한 쇼핑몰 페이지뷰입니다. </p>
-                </div>
-                <a href="./works/aware/index.html" target="blank"><button class="btn_go">GO TO SITE</button></a>
-                <div class="clear"></div>
-            </div>
-            <div class="cont_box">
-                <div class="cont_img"><img src="./static/images/polio_quick.jpg" alt=""/></div>
-                <div class="cont_text">
-                    <h4>POLIO</h4>
-                    <p>웹, 태블릿, 모바일을 지원하는 3단계 반응형 과제입니다.</p>
-                </div>
-                <a href="./works/polio/index.html" target="blank"> <button class="btn_go">GO TO SITE</button></a>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </script>
-
-    <script id="tpl_Works3" type="text/x-jsrender">
-        <div class="works3_container" style="display: none">
-            <div class="works3_ironman">
-                <a href="./works/ironman/function.html" target="blank">
-                    <div class="works3_img">
-                        <img src="./static/images/ironman.jpg" alt="아이언맨 이미지"/>
-                        <p>IRONMAN</p>
-                        <div class="background"></div>
+            </nav>
+        </header>
+        <div class="body_container">
+            <section class="main">
+                <div class="slide_wrapper">
+                    <div class="slide_container">
+                        <div class="slide_1 showed" id="s1">
+                            <p class="big">My Name is SEOYEON</p>
+                        </div>
+                        <div class="slide_2" id="s2" style="display: none">
+                            <p class="big">Junior Front-End Developer</p>
+                        </div>
+                        <div class="slide_3" id="s3" style="display: none">
+                            <p class="big">I love JavaScript</p>
+                        </div>
+                        <div class="slide_4" id="s4" style="display: none">
+                            <p class="big">Work Hard, Play Hard</p>
+                        </div>
+                        <div class="go_container">
+                            <button class="about"><a href="#about">Learn More</a></button>
+                            <button class="works"><a href="#works">My Works</a></button>
+                        </div>
+                        <div class="dot_container">
+                            <div class="s1"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                            <div class="s2"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+                            <div class="s3"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+                            <div class="s4"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+                        </div>
+                        <!-- <button type="button" class="btn_prev disabled"><i class="fa fa-angle-double-left fa-3x" aria-hidden="true"></i></button>
+                        <button type="button" class="btn_next"><i class="fa fa-angle-double-right fa-3x" aria-hidden="true"></i></button> -->
                     </div>
-                </a>
-            </div>
-            <div class="works3_matrix">
-                <a href="./works/matrix/drop.html" target="blank">
-                    <div class="works3_img">
-                        <img src="./static/images/matrix.jpg" alt="매트릭스 영화 이미지"/>
-                        <p>MATRIX</p>
-                        <div class="background"></div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about_wrapper">
+                    <div class="hello_container">
+                        <h2>WELCOME!</h2>
+                        <p>1년차 프론트엔드 개발자 염서연의 공간입니다 :-)</p>
                     </div>
-                </a>
-            </div>
-            <div class="works3_game">
-                <a href="./works/hangman/index.html" target="blank">
-                    <div class="works3_img">
-                        <img src="./static/images/hang.jpg" alt="행맨 게임 이미지"/>
-                        <p>HANGMAN</p>
-                        <div class="background"></div>
+                    <div class="skill_container">
+                        <h2 class="head">MY SKILL</h2>
+                        <div class="box_container">
+                            <div class="cont_box">
+                                <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+                                <span>HTML5 / CSS3</span>
+                                <p>Following W3C standard and web accessibility, I can write websites with clean, semantic markup.</p>
+                            </div>
+                            <div class="cont_box">
+                                <div class="fa-img"><img src="./static/images/sass.png" alt="sass"></div>
+                                <span>SASS</span>
+                                <p>I'm using node-sass, and I can make responsive web for mobile, tablet and desktop.</p>
+                            </div>
+                            <div class="cont_box">
+                                <i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
+                                <span>JAVA SCRIPT / JQUERY</span>
+                                <p>Java script and Jquery are my favorite language. I love burying myself in problem-solving process.</p>
+                            </div>
+                            <p>and I also can use...</p>
+                            <div class="cont_sub">
+                                <span>GIT FLOW</span>
+                                <span>PYTHON 2.7</span>
+                                <span>PHOTOSHOP</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="works3_playing">
-                <a href="./works/musicPlaying/mystyling.html" target="blank">
-                    <div class="works3_img">
-                        <img src="./static/images/music.jpg" alt="음악 아이콘 이미지"/>
-                        <p>MUSIC PLAYING</p>
-                        <div class="background"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </script>
-
-    <script id="tpl_Works4" type="text/x-jsrender">
-        <div class="works4_container" style="display: none">
-            <h4 class="head">ALL HASHTAGS AROUND ME, <span>'NULL'</span></h4>
-            <p>패스트캠퍼스 팀 프로젝트로 만든 익명 SNS 서비스 웹 페이지입니다. <br> 백엔드 3명, 프론트엔드 1명이 팀으로 함께 작업했습니다.</p>
-            <div class="span_container">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JAVA SCRIPT</span>
-                <span>JQUERY</span>
-                <span>PYTHON</span>
-            </div>
-            <div class="video_container">
-                <iframe width="672" height="378" src="https://www.youtube.com/embed/yBalgmJ_sE0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </script>
-
-
-    <!-- career 페이지 세부 템플릿 -->
-    <script id="tpl_Career" type="text/x-jsrender">
-        <link rel="stylesheet" href="./static/style/career.css"/>
-
-        <div class="career_wrapper" style="display: none">
-            <div class="head_section head">Now I am getting improved...</div>
-            <div class="career_container">
-                <div class="box1">
-                    <h3 class="head">BRINGPRICE</h3>
-                    <p><a href="https://bringprice.com" target="blank">https://bringprice.com</a></p>
-                    <div class="cont_img">
-                        <div class="slide">
-                            <div class="slide_all">
-                                <img src="./static/images/bring1.jpg" alt="브링프라이스 웹 페이지 이미지"/>
-                                <img src="./static/images/bring2.jpg" alt="브링프라이스 웹 페이지 이미지"/>
-                                <img src="./static/images/bring3.jpg" alt="브링프라이스 웹 페이지 이미지"/>
-                                <img src="./static/images/bring6.jpg" alt="브링프라이스 모바일 페이지 이미지"/>
+                    <div class="about_container" id="about">
+                        <h2 class="head">ABOUT ME</h2>
+                        <div class="img_box">
+                            <img src="./static/images/profile.jpg" width="100%" height="auto" alt="my picture">
+                        </div>
+                        <div class="text_box">
+                            <div class="cont_text">
+                                <h4>(주)BRINGPRICE</h4>
+                                <span class="date">2017/01 ~ 2017/04</span>
+                                <p class="head">Development team / front-end developer</p>
+                            </div>
+                            <div class="cont_text">
+                                <h4>NEXT ENTERTAINMENT WORLD</h4>
+                                <span class="date">2015/01 ~ 2016/08</span>
+                                <p class="head">Marketing team / member</p>
+                            </div>
+                            <div class="cont_text">
+                                <h4>SOGANG UNIVERSITY</h4>
+                                <span class="date">2008/03 ~ 2015/02</span>
+                                <p class="head">Majored in Business Administration</p>
+                            </div>
+                            <div class="cont_text">
+                                <h4>QUEENS COLLEGE NEW YORK</h4>
+                                <span class="date">2012/09 ~ 2013/01</span>
+                                <p class="head">Finished the course of English Language Institute</p>
                             </div>
                         </div>
-                        <div class="btn_slide">
-                            <button type="button" class="btn_prev disabled"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></button>
-                            <button type="button" class="btn_next"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section class="career" id="career">
+                <div class="career_wrapper">
+                    <h2 class="head">PROJECT</h2>
+                    <div class="career_container">
+                        <div class="container_1">
+                            <h4 class="head"><a href="https://bringprice.com" target="blank">https://bringprice.com</a></h4>
+                            <div class="slide">
+                                <div class="slide_all">
+                                    <img src="./static/images/bring1.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                    <img src="./static/images/bring2.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                    <img src="./static/images/bring3.jpg" alt="브링프라이스 웹 페이지 이미지"/>
+                                    <img src="./static/images/bring6.jpg" alt="브링프라이스 모바일 페이지 이미지"/>
+                                </div>
+                            </div>
+                            <div class="btn_slide">
+                                <button type="button" class="btn_prev disabled"><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i></button>
+                                <button type="button" class="btn_next"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i></button>
+                            </div>
+                            <p>최저가 항공권 검색 서비스 '브링프라이스'의 웹/모바일 페이지입니다.</p>
                         </div>
+                        <div class="container_2">
+                            <h4 class="head">All Hashtags around me, 'NULL'</h4>
+                            <div class="video_container">
+                                <iframe width="670" height="376" src="https://www.youtube.com/embed/yBalgmJ_sE0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p>패스트캠퍼스 팀 프로젝트로 만든 익명 SNS 서비스 웹 페이지입니다. <br> 백엔드 3명, 프론트엔드 1명이 팀으로 함께 작업했습니다.</p>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="cont_text">
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>상용화 서비스 웹/모바일 사이트 유지보수</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>네이티브 자바스크립트를 이용한 달력 디자인/기능 구현</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>JS RENDER 템플릿, JQUERY UI, JQUERY COOKIE 등 활용</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>AJAX로 데이터 전송 및 렌더링 구현</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>사파리, 파이어폭스, 익스플로러 9 이상 버전 크로스 브라우징</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>GIT FLOW를 이용한 버전관리, 협업 진행</li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
                 </div>
-                <div class="box2">
-                    <h3 class="head">B2B DASHBOARD</h3>
-                    <div class="cont_text">
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>B2B 사업자용 결과 보고 페이지(대시보드) 디자인/기능 구현</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Google Chart 라이브러리 활용</li>
-                        </ul>
+            </section>
+            <section class="works" id="works">
+                <div class="works_wrapper">
+                    <h2 class="head">WORKS</h2>
+                    <div class="works_container">
+                        <div class="work_box">
+                            <a href="./works/article/index.html" target="blank"><div class="back_img article">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>ARTICLE</h4>
+                                <p class="head">Basic HTML5/CSS3</p>
+                            </div>
+                        </div>
+                        <div class="work_box">
+                            <a href="./works/aqua/index.html" target="blank"><div class="back_img aqua">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>AQUA</h4>
+                                <p class="head">HTML/CSS + JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="work_box">
+                            <a href="./works/polio/index.html" target="blank"><div class="back_img polio">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>POLIO</h4>
+                                <p class="head">Responsive Web/Tablet/Mobile</p>
+                            </div>
+                        </div>
+                        <div class="work_box">
+                            <a href="./works/aware/index.html" target="blank"><div class="back_img aware">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>AWARE</h4>
+                                <p class="head">1920 wide version with SASS</p>
+                            </div>
+                        </div>
+                        <div class="work_box">
+                            <a href="./works/hangman/index.html" target="blank"><div class="back_img hangman">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>HANGMAN</h4>
+                                <p class="head">made with native JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="work_box">
+                            <a href="./works/matrix/drop.html" target="blank"><div class="back_img matrix">
+                                <div class="img_hover"><i class="fa fa-plus fa-3x"></i></div>
+                            </div></a>
+                            <div class="back_text">
+                                <h4>MATRIX</h4>
+                                <p class="head">Matrix movie effect</p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="cont_img"></div>
-                    <div class="clear"></div>
                 </div>
-                <div class="box3">
-                    <h3 class="head">B2B 여행박사</h3>
-                    <div class="cont_img">
-                        <div class="slide"><img src="./static/images/tourbaksa.jpg" alt="여행박사 사이트 이미지" width="100%" height="100%"/></div>
-                    </div>
-                    <div class="cont_text">
-                        <ul>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>여행박사 웹/모바일 페이지 내 다구간 서비스 개발 진행</li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact_wrapper">
+                    <h2 class="head">CONTACT</h2>
+                    <ul class="info_list">
+                        <li class="head">EMAIL : <span>sy8095@gmail.com</span></li>
+                        <li class="head">PHONE : <span>010-2363-8095</span></li>
+                        <li class="head">KAKAO : <span>sy8095</span></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="back_img"></div>
+            </section>
         </div>
-    </script>
-
-
-    <!-- contact 페이지 세부 템플릿 -->
-    <script id="tpl_Contact" type="text/x-jsrender">
-        <link rel="stylesheet" href="./static/style/contact.css"/>
-
-        <div class="contact_wrapper" style="display:none">
-            <div class="head_section head">CONTACT</div>
-            <div class="contact_box button red">
-                <ul class="info_list">
-                    <li class="head">EMAIL : <span>sy8095@gmail.com</span></li>
-                    <li class="head">GITHUB : <span>https://github.com/SeoyeonYeom</span></li>
-                    <li class="head">PHONE : <span>010-2363-8095</span></li>
-                    <li class="head">KAKAO : <span>sy8095</span></li>
-                </ul>
-                <div class="rat"><img src="./static/images/rat.png" alt="쥐"/></div>
-                <div class="foot">
-                    <img src="./static/images/foot.png" alt="발자국"/>
-                    <img src="./static/images/foot.png" alt="발자국"/>
-                    <img src="./static/images/foot.png" alt="발자국"/>
-                </div>
+        <footer class="footer">
+            <p>Copyright © SEOYEON_YEOM</p>
+            <div class="icon">
+                <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
             </div>
-            <div class="back_img"></div>
-        </div>
-    </script>
-
-
-
+        </footer>
+    </div>
 
 </body>
 </html>
