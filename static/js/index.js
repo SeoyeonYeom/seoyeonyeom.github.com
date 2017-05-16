@@ -41,10 +41,6 @@ $(function(){
 
 });
 
-function radioDot(id){
-    $('.dot_container').find('.fa-circle').attr('class', 'fa fa-circle-o');
-    $('.dot_container'+' .'+id).find('.fa-circle-o').attr('class', 'fa fa-circle');
-}
 
 function movingSlide(count){
     setInterval(function(){
@@ -52,10 +48,16 @@ function movingSlide(count){
         $('.slide_container div[class*="slide"]').css('display', 'none');
         $('.slide_container div.showed').removeClass('showed');
         var showed_div = div_arr[count++ % div_arr.length];
-        showed_div.style.display = 'block';
-        showed_div.classList.add('showed');
+        var id = showed_div.getAttribute('id');
+        $('#'+id).css('display', 'block');
+        $('#'+id).addClass('showed');
 
-        var showed_id = $('.slide_container .showed').attr('id');
-        radioDot(showed_id);
+        radioDot(id);
     }, 2000);
+}
+
+
+function radioDot(id){
+    $('.dot_container').find('.fa-circle').attr('class', 'fa fa-circle-o');
+    $('.dot_container'+' .'+id).find('.fa-circle-o').attr('class', 'fa fa-circle');
 }
