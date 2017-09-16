@@ -102,8 +102,6 @@ button{
     height: 700px;
     overflow: hidden;
 }
-.slide_container{
-}
 .slide_container > div[class*='slide']{
     float: left;
     height: 700px;
@@ -129,16 +127,13 @@ button{
     font-size: 24px;
 }
 .slide_container > .slide_1{
-    background-image: url("../images/2-2.jpg");
+    background-image: url("../images/main1.png");
 }
 .slide_container > .slide_2{
-    background-image: url("../images/2.jpg");
+    background-image: url("../images/main2.png");
 }
 .slide_container > .slide_3{
-    background-image: url("../images/4.jpg");
-}
-.slide_container > .slide_4{
-    background-image: url("../images/3.jpg");
+    background-image: url("../images/main3.png");
 }
 .slide_container > .go_container,
 .slide_container > .dot_container{
@@ -243,8 +238,6 @@ button{
 }
 .skill_container .box_container{
     width: 1400px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin: 150px auto 0;
 }
 .skill_container .cont_box{
@@ -286,18 +279,19 @@ button{
 .skill_container .cont_box span{
     display: block;
     margin: 30px auto 0;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
 }
 .skill_container .box_container > p{
-    width: 240px;
+    width: 140px;
     height: 340px;
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     text-align: center;
     float: left;
+    padding-top: 60px;
 }
 .skill_container .cont_sub{
     float: left;
@@ -308,8 +302,7 @@ button{
     padding: 10px 20px;
     border-radius: 30px;
     background-color: #FE284B;
-    width: 140px;
-    display: block;
+    display: inline-block;
     margin-bottom: 14px;
 }
 .about_container{
@@ -371,24 +364,22 @@ button{
     background-color: #FE284B;
 }
 .career_wrapper .career_container{
-    height: 700px;
     padding-top: 100px;
 }
 .career_container > div[class*='container']{
-    width: 50%;
-    height: 300px;
-    float: left;
+    min-height: 500px;
+    padding-bottom: 60px;
 }
 .career_container h4{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 30px;
     text-align: center;
 }
-.container_1{
+.container_2{
     position: relative;
 }
-.container_1 .slide{
+.container_2 .slide{
     width: 640px;
     height: 360px;
     overflow: hidden;
@@ -396,22 +387,27 @@ button{
     position: relative;
     margin: auto;
 }
-.container_1 .slide_all{
+.container_2 .slide_all{
     position: absolute;
     top: 0;
     left: 0;
     width: 3200px;
     height: 450px;
 }
-.container_1 .slide img{
+.container_1 img,
+.container_2 .slide img{
     width: 640px;
     height: auto;
+}
+.container_2 .slide img{
     float: left;
 }
 .career_container .btn_slide{
     position: absolute;
-    top: 75%;
-    width: 100%;
+    top: 35%;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
     height: 40px;
 }
 .career_container .btn_slide button{
@@ -436,14 +432,14 @@ button{
     color: #FE284B;
     opacity: 0.8;
 }
-.container_2 .video_container{
+.container_3 .video_container{
     width: 670px;
     height: 376px;
     overflow: hidden;
     border: 3px solid #000;
     margin: auto;
 }
-.container_2 h4{
+.container_3 h4{
     margin-bottom: 24px;
 }
 .career_container p{
@@ -452,7 +448,7 @@ button{
 }
 
 
-/* works section design */
+/* projects section design */
 
 .works_wrapper{
     padding: 80px 0 0;
@@ -511,6 +507,12 @@ button{
     background: url("../images/hang.png") 50% 50% no-repeat;
 }
 .work_box .back_img.matrix{
+    background: url("../images/matrix.png") 50% 50% no-repeat;
+}
+.work_box .back_img.react{
+    background: url("../images/matrix.png") 50% 50% no-repeat;
+}
+.work_box .back_img.javaBoard{
     background: url("../images/matrix.png") 50% 50% no-repeat;
 }
 .work_box .back_img:hover .img_hover{

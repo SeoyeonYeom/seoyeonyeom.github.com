@@ -21,7 +21,7 @@ $(function(){
             return;
         } else {
             $(this).addClass('animate');
-            var $container = $(this).parents('.container_1').find('.slide_all');
+            var $container = $(this).parents('.container_2').find('.slide_all');
             var offset = parseInt($container.css('left'));
             $container.animate({
                 'left' : $(this).hasClass('btn_next')? (offset -= 640) : (offset += 640)
@@ -38,7 +38,7 @@ $(function(){
             }
         }
     });
-
+    
 });
 
 
@@ -53,7 +53,7 @@ function movingSlide(count){
         $('#'+id).addClass('showed');
 
         radioDot(id);
-    }, 2000);
+    }, 1800);
 }
 
 
