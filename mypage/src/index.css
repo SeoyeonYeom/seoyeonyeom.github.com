@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  color: #292A2B;
+  min-height: 100vh;
+  background: linear-gradient(20deg,rgb(219,112,147),#daa357);
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+.clear {
+  clear: both;
+  display: block;
 }
