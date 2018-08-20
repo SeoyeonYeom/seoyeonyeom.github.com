@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const HeadWrap = styled.div`
   width: 100%;
   height: 200px;
-  padding: 3rem 1rem;
-  padding-bottom: 2rem;
+  padding: 4rem 1rem;
+  margin-bottom: 4rem;
   text-align: center;
 `;
 
@@ -25,6 +25,7 @@ const MenuWrap = styled.div`
       width: 100px;
       float: left;
       font-size: 0.8rem;
+      font-weight: bold;
     }
   }
 `;

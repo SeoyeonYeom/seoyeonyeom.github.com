@@ -7,7 +7,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   color: #292A2B;
   min-height: 100vh;
-  background: linear-gradient(20deg,rgb(219,112,147),#daa357);
+  font-size: 0.8rem;
 }
 
 body * {
