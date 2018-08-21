@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import StyleGuide from "../StyleGuide";
 
 const HeadWrap = styled.div`
   width: 100%;
@@ -24,7 +25,7 @@ const MenuWrap = styled.div`
     & li {
       width: 100px;
       float: left;
-      font-size: 0.8rem;
+      font-size: ${StyleGuide.font.size.paragraph};
       font-weight: bold;
     }
   }

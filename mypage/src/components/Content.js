@@ -8,6 +8,7 @@ import Resume from "./Resume";
 const ContentBox = styled.div`
   width: 70%;
   margin: auto;
+  padding-bottom: 4rem;
 `;
 
 export default class Content extends Component {

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import StyleGuide from "../StyleGuide";
 
 const Wrapper = styled.div`
   margin-top: 3rem;
 `;
 
 const Download = styled.div`
-  font-size: 1rem;
+  font-size: ${StyleGuide.font.size.heading3};
   height: 80px;
   line-height: 80px;
   border-bottom: 1px solid rgb(52, 52, 52);
@@ -14,9 +15,9 @@ const Download = styled.div`
 
 const TextWrap = styled.div`
   & h2 {
-    font-size: 2rem;
+    font-size: ${StyleGuide.font.size.heading2};
     font-weight: bold;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1rem;
   }
 `;
 
@@ -27,10 +28,14 @@ const Content = styled.div`
     font-size: 1rem;
     font-weight: bold;
     & .location {
-      font-size: 0.8rem;
+      font-size: ${StyleGuide.font.size.paragraph};
       font-weight: 100;
       margin-left: 10px;
     }
+  }
+  & .skillset {
+    font-size: 1rem; 
+    font-weight: 100;
   }
 `;
 
@@ -89,6 +94,16 @@ export default class Resume extends Component {
                 Bachelor of business administration
               </div>
               <div>2008 - 2015</div>
+            </Content>
+          </div>
+          <div className="skill">
+            <h2>Skill</h2>
+            <Content>
+              <div className="skillset">
+              React; Redux; Node.js; Express.js;
+              CSS/SASS; HTML5; Jquery; Native JavaScript;<br></br>
+              Advanced beginner with Mysql;
+              </div>
             </Content>
           </div>
         </TextWrap>

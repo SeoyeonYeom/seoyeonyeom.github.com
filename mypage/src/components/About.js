@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Profile from "../img/profile.jpg";
+import StyleGuide from '../StyleGuide';
 
 const Wrapper = styled.div`
   & .imgWrap {
     width: 40%;
+    float: left;
   }
   & .textWrap {
     width: 60%;
+    float: left;
   }
   & > div {
     padding: 1rem;
-    float: left;
   }
 `;
 
@@ -27,8 +29,8 @@ const TextPara = styled.div`
   & p {
     margin-bottom: 1rem;
     & .bold {
-      color: rgb(236, 65, 79);
-      font-size: 1.2rem;
+      color: ${StyleGuide.color.main.basic};
+      font-size: ${StyleGuide.font.size.heading3};
       font-weight: bold;
     }
   }
