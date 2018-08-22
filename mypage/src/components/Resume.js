@@ -101,8 +101,10 @@ export default class Resume extends Component {
             <Content>
               <div className="skillset">
               React; Redux; Node.js; Express.js;
-              CSS/SASS; HTML5; Jquery; Native JavaScript;<br></br>
-              Advanced beginner with Mysql;
+              Css/Sass; HTML5; jQuery; ajax;<br></br>
+              advanced beginner with Mysql, Mysql Workbench, and Java;<br></br>
+              able to understand and make simple coding with Python;<br></br>
+              familiar to work with Git Flow;
               </div>
             </Content>
           </div>

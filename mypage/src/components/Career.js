@@ -64,7 +64,11 @@ export default class Career extends Component {
           </Img>
           <Text>
             <ul>
-              <li></li>
+              <li>Leading a project creating and developing a new version of the website replacing the previous one.</li>
+              <li>being in charge of designing UI/UX and page layout, and developing backend & frontend code including API.</li>
+              <li>Customizing Semantic-ui, React-Infinite-Scroll library, and various other react tools.</li>
+              <li>Implementing responsive web which supports large screen, computer, tablet, and mobile. </li>
+              <li>Mysql for Database, Node.js & Express for back-end, React & Redux for front-end.</li>
             </ul>
           </Text>
         </div>
@@ -77,7 +81,9 @@ export default class Career extends Component {
           </Img>
           <Text>
             <ul>
-              <li></li>
+              <li>Managing the daily maintenance of the website including improving its performance.</li>
+              <li>Dealing with the client's request and fixing errors.</li>
+              <li>Tomcat7, Java & spring, jsp, jquery, mysql, eclipse.</li>
             </ul>
           </Text>
         </div>
@@ -90,7 +96,10 @@ export default class Career extends Component {
           </Img>
           <Text>
             <ul>
-              <li></li>
+              <li>Developing a dashboard page for B2B clients.</li>
+              <li>Participating in reorganizing web&mobile web, web site maintenance. </li>
+              <li>Especially designing calendar UI and implementing its function.</li>
+              <li>jQuery, css, JS-render template, semantic-ui, and GitFlow.</li>
             </ul>
           </Text>
         </div>
