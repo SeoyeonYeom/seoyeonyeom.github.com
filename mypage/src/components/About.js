@@ -21,7 +21,7 @@ const Img = styled.div`
   height: 400px;
   overflow: hidden;
   background-size: cover;
-  background-position: 0 40%;
+  background-position: 0;
 `;
 
 const TextPara = styled.div`
@@ -46,7 +46,7 @@ export default class About extends Component {
         <div className="textWrap">
           <TextPara>
             <p>
-              <span className="bold">Hello, </span> my name is Seoyeon, and I am a web developer with a huge passion for challenging. 
+              <span className="bold">Hello, </span> my name is Seoyeon, and I am a junior web developer with a huge passion for challenging. 
               I love programming, jokes, puzzles, and coffee. I can even make the best cappuccino! 
               I also love music and travel. 
             </p>
