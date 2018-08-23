@@ -33,10 +33,20 @@ const TextPara = styled.div`
       font-size: ${StyleGuide.font.size.heading3};
       font-weight: bold;
     }
+    & span.link {
+      text-decoration: underline;
+      color: ${StyleGuide.color.main.basic};
+      cursor: pointer;
+      margin: 0 0.3rem;
+    }
   }
 `;
 
 export default class About extends Component {
+  goResume = () => {
+    this.props.history.push("/resume");
+  }
+
   render(){
     return(
       <Wrapper>
@@ -63,7 +73,8 @@ export default class About extends Component {
             </p>
             <p>
               For more information about me or to get in touch regarding job opportunities, 
-              please feel free to contact me. You can check out my resume here. Thank you!
+              please feel free to contact me. You can check out my resume  
+              <span className="link" onClick={this.goResume}>here.</span>Thank you!
             </p>
           </TextPara>
         </div>

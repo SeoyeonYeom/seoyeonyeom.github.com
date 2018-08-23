@@ -16,7 +16,7 @@ export default class Content extends Component {
     const menu = this.props.match.params.menu;
     return(
       <ContentBox>
-        {menu === "about" ? <About/>
+        {menu === "about" ? <About history={this.props.history}/>
        : menu === "works" ? <Works/>
        : menu === "contact" ? <Contact/>
        : <Resume/>

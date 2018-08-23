@@ -6,7 +6,6 @@ import Career from "./Career";
 import Play from "./Play";
 
 const Wrapper = styled.div`
-  margin-top: 3rem;
 `;
 
 const Tap = styled.ul`

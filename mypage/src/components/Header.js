@@ -18,10 +18,20 @@ const Logo = styled.div`
 `;
 
 const MenuWrap = styled.div`
+  &#normal {
+    positon: relative;
+  }
+  &#fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+  }
   & ul {
     width: 400px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px auto;
     & li {
       width: 100px;
       float: left;
@@ -37,7 +47,7 @@ class Header extends Component {
     return(
       <HeadWrap>
         <Link to="/"><Logo>seoyeon.yeom</Logo></Link>
-        <MenuWrap>
+        <MenuWrap id={this.props.position}>
           <ul>
             <Link to="/about"><li>ABOUT</li></Link>
             <Link to="/works"><li>WORKS</li></Link>

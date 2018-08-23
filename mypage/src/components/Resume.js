@@ -11,6 +11,7 @@ const Download = styled.div`
   height: 80px;
   line-height: 80px;
   border-bottom: 1px solid rgb(52, 52, 52);
+  cursor: pointer;
 `;
 
 const TextWrap = styled.div`
@@ -56,7 +57,9 @@ export default class Resume extends Component {
               <div className="sub">
                 web developer | May 2017 - Now
               </div>
-              <div className="detail"></div>
+              <div className="detail">
+                I am mainly 
+              </div>
             </Content>
             <Content>
               <div className="title">Bringprice
