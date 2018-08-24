@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Content from "../components/Content";
+import ReactDOM from "react-dom";
 
 export default class Template extends Component {
   state = {
@@ -10,9 +11,6 @@ export default class Template extends Component {
   }
 
   componentDidMount() {
-    //const elem = ReactDOM.findDOMNode(this.refs.wrapper);
-    console.log(this.refs.wrapper);
-    this.refs.wrapper.addEventListener('onScroll', this.getHeight, true);
   }
 
   getHeight = async (e) => {

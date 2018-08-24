@@ -27,7 +27,7 @@ export default class Contact extends Component {
         <Lists>
           <FontAwesomeIcon icon={faLinkedin} size="2x"/>
           <span>
-            <a href="https://www.linkedin.com/in/sienna-seoyeon-yeom-74132457/">
+            <a href="https://www.linkedin.com/in/sienna-seoyeon-yeom-74132457/" target="blank">
               Go to view my profile
             </a>
           </span>
@@ -35,7 +35,7 @@ export default class Contact extends Component {
         <Lists>
           <FontAwesomeIcon icon={faGithub} size="2x"/>
           <span>
-            <a href="https://github.com/SeoyeonYeom">
+            <a href="https://github.com/SeoyeonYeom" target="blank">
               Visit my github page
             </a>
           </span>

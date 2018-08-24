@@ -4,6 +4,7 @@ import StyleGuide from "../StyleGuide";
 
 const Wrapper = styled.div`
   margin-top: 3rem;
+  margin-bottom: 4rem;
 `;
 
 const Download = styled.div`
@@ -34,6 +35,9 @@ const Content = styled.div`
       margin-left: 10px;
     }
   }
+  & .detail {
+    margin-top: .8rem;
+  }
   & .skillset {
     font-size: ${StyleGuide.font.size.paragraph}; 
     font-weight: 100;
@@ -58,7 +62,10 @@ export default class Resume extends Component {
                 web developer | May 2017 - Now
               </div>
               <div className="detail">
-                I am mainly 
+                Participated in improving and modifying the website from layout to function, 
+                and handling technical problems. Led project to develop the new website and played a big part of
+                every process from database to client side. Also had experience installing and setting up 
+                the tomcat server with linux server environment. 
               </div>
             </Content>
             <Content>
@@ -68,7 +75,10 @@ export default class Resume extends Component {
               <div className="sub">
                 front end developer | Jan 2017 - Apr 2017
               </div>
-              <div className="detail"></div>
+              <div className="detail">
+                Member of a development team responsible for design, development, 
+                testing and debugging the web/mobile web. Worked closely with team members using Git Flow. 
+              </div>
             </Content>
             <Content>
               <div className="title">Next Entertainment World
@@ -77,7 +87,12 @@ export default class Resume extends Component {
               <div className="sub">
                 marketer | Jan 2015 - Aug 2016
               </div>
-              <div className="detail"></div>
+              <div className="detail">
+                Hired as a member of the marketing team support developing marketing concept 
+                and advertising activity. Coordinated event and trade show with budgets up to $10 million. 
+                Created main advertising copy of the movie "Beauty Inside" and took charge of public relations 
+                of "Train to Busan". 
+              </div>
             </Content>
             <Content>
               <div className="title">Korean Cultural Service NY
@@ -86,7 +101,10 @@ export default class Resume extends Component {
               <div className="sub">
                 Intern | June 2013 - Feb 2014
               </div>
-              <div className="detail"></div>
+              <div className="detail">
+                Served at the department of film&amp;education as an intern. 
+                Supported organizing formal events held to introduce Korean culture around.
+              </div>
             </Content>
           </div>
           <div className="edu">
@@ -103,12 +121,11 @@ export default class Resume extends Component {
             <h2>Skill</h2>
             <Content>
               <div className="skillset">
-              React&amp;Redux; Node.js&amp;Express.js;
-              Css/Sass; HTML5; jQuery; ajax;<br></br>
-              advanced beginner with Mysql, Mysql Workbench, and Java;<br></br>
-              able to read and develop simple code with Python;<br></br>
-              familiar to work with Git Flow;
-              NPM&amp;Node package;
+              React with Redux; Node.js with Express framework;
+              HTML5; Css/Sass; Jquery; Ajax;<br></br>
+              advanced beginner with Mysql, mysql Workbench, and Java;<br></br>
+              possible to read and handle simple code with Python;<br></br>
+              familiar with Git Flow, and NPM package;
               </div>
             </Content>
           </div>

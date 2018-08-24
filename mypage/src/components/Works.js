@@ -6,6 +6,11 @@ import Career from "./Career";
 import Play from "./Play";
 
 const Wrapper = styled.div`
+  margin-bottom: 4rem;
+  @media only screen and (max-width: 767px) and (min-width: 320px){
+    width: 320px;
+    margin: auto;
+  }
 `;
 
 const Tap = styled.ul`

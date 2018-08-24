@@ -4,13 +4,20 @@ import Profile from "../img/profile.jpg";
 import StyleGuide from '../StyleGuide';
 
 const Wrapper = styled.div`
+  margin-bottom: 4rem;
   & .imgWrap {
     width: 40%;
     float: left;
+    @media only screen and (max-width: 767px) and (min-width: 320px){
+      width: 100%;
+    }
   }
   & .textWrap {
     width: 60%;
     float: left;
+    @media only screen and (max-width: 767px) and (min-width: 320px){
+      width: 100%;
+    }
   }
   & > div {
     padding: 1rem;
@@ -22,6 +29,9 @@ const Img = styled.div`
   overflow: hidden;
   background-size: cover;
   background-position: 0;
+  @media only screen and (max-width: 1199px) and (min-width: 768px){
+    height: 500px;
+  }
 `;
 
 const TextPara = styled.div`
@@ -49,7 +59,7 @@ export default class About extends Component {
 
   render(){
     return(
-      <Wrapper>
+      <Wrapper id="Wrapper">
         <div className="imgWrap">
           <Img style={{backgroundImage: `url(${Profile})`}}></Img>
         </div>

@@ -71,32 +71,42 @@ export default class Play extends Component {
     return(
       <Wrapper>
         <div className="contentBox">
-          <a href="../codeSrc/aqua/index.html" target="blank">
-          <Box>
-            <div className="imgBox img1"></div>
-            <TextPart>Basic HTML5&amp;CSS3&amp;JavaScript</TextPart>
-          </Box>
+          <a href="#" target="blank">
+            <Box>
+              <div className="imgBox img1"></div>
+              <TextPart>Basic HTML5&amp;CSS3&amp;JavaScript</TextPart>
+            </Box>
           </a>
-          <Box>
-            <div className="imgBox img2"></div>
-            <TextPart>1920 wide version with SASS</TextPart>
-          </Box>
-          <Box>
-            <div className="imgBox img3"></div>
-            <TextPart className="longText">Responsive Web&amp;Tablet&amp;Mobile using Grid System</TextPart>
-          </Box>
-          <Box>
-            <div className="imgBox img4"></div>
-            <TextPart>Native JavaScript Hangman Game</TextPart>
-          </Box>
+          <a href="#" target="blank">
+            <Box>
+              <div className="imgBox img2"></div>
+              <TextPart>1920 wide version with SASS</TextPart>
+            </Box>
+          </a>
+          <a href="#" target="blank">
+            <Box>
+              <div className="imgBox img3"></div>
+              <TextPart className="longText">Responsive Web&amp;Tablet&amp;Mobile using Grid System</TextPart>
+            </Box>
+          </a>
+          <a href="#" target="blank">
+            <Box>
+              <div className="imgBox img4"></div>
+              <TextPart>Native JavaScript Hangman Game</TextPart>
+            </Box>
+          </a>
+          <a href="#" target="blank">
           <Box>
             <div className="imgBox img5"></div>
             <TextPart>Matrix Movie Effect</TextPart>
           </Box>
-          <Box>
-            <div className="imgBox img6"></div>
-            <TextPart>Nightmare in Christmas</TextPart>
-          </Box>
+          </a>
+          <a href="#" target="blank">
+            <Box>
+              <div className="imgBox img6"></div>
+              <TextPart>Nightmare in Christmas</TextPart>
+            </Box>
+          </a>
           <div className="clear"></div>
         </div>
       </Wrapper>

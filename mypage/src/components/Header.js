@@ -7,7 +7,7 @@ const HeadWrap = styled.div`
   width: 100%;
   height: 200px;
   padding: 4rem 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 `;
 
