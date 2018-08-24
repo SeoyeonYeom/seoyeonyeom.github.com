@@ -35,7 +35,7 @@ const Content = styled.div`
     }
   }
   & .skillset {
-    font-size: 1rem; 
+    font-size: ${StyleGuide.font.size.paragraph}; 
     font-weight: 100;
   }
 `;
@@ -103,11 +103,12 @@ export default class Resume extends Component {
             <h2>Skill</h2>
             <Content>
               <div className="skillset">
-              React; Redux; Node.js; Express.js;
+              React&amp;Redux; Node.js&amp;Express.js;
               Css/Sass; HTML5; jQuery; ajax;<br></br>
               advanced beginner with Mysql, Mysql Workbench, and Java;<br></br>
-              able to understand and make simple coding with Python;<br></br>
+              able to read and develop simple code with Python;<br></br>
               familiar to work with Git Flow;
+              NPM&amp;Node package;
               </div>
             </Content>
           </div>

@@ -1,0 +1,41 @@
+
+/* mobile 4 grid */
+
+// @media only screen and (max-width: 750px){
+  $col-m-1: 25%;
+  $col-m-2: 50%;
+  $col-m-3: 75%;
+  $col-m-4: 100%;
+
+
+
+/* tablet 8 grid */
+
+@media only screen and (max-width: 1024px){
+  $col-t-1: 12.5%;
+  $col-t-2: 25%;
+  $col-t-3: 37.5%;
+  $col-t-4: 50%;
+  $col-t-5: 62.5%;
+  $col-t-6: 75%;
+  $col-t-7: 87.5%;
+  $col-t-8: 100%;
+}
+
+
+/* desktop 12 grid */
+
+@media only screen and (max-width: 1920px){
+  $col-d-1: 8.333%;
+  $col-d-2: 16.667%;
+  $col-d-3: 25%;
+  $col-d-4: 33.333%;
+  $col-d-5: 41.667%;
+  $col-d-6: 50%;
+  $col-d-7: 58.333%;
+  $col-d-8: 66.667%;
+  $col-d-9: 75%;
+  $col-d-10: 83.333%;
+  $col-d-11: 91.667%;
+  $col-d-12: 100%;
+}

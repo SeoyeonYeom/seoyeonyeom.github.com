@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@import url(form-font.css);
+
+header, body, main, footer, div, h1, h2, h3, nav, button, ul, li, section,
+img, video, p, span{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 14px;
+  font-family: 'PT_Serif';
+  position: relative;
+  background: #000;
+}
+
+/* 그리드 설정 */
+
+.container{
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.container.show-grid{
+  position: relative;
+}
+
+.container.show-grid::before{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 400vh;
+}
+
+.container.show-grid::before{
+  background-image:
+  linear-gradient(180deg, transparent 13px, #71706f 13px ),
+  linear-gradient(90deg, rgba(251, 108, 130, 0.3) 50%, transparent 50%);
+  background-size: 1px 14px, 25% 1px;
+}
+
+.grid-btn-on{
+  position: absolute;
+  top: 2%;
+  position: fixed;
+  font-family: 'Nightmare-Before-Christmas';
+  font-size: 1.4rem;
+  background-color: #1a0b22;
+  color: #f82344;
+  padding: 3px 10px 3px 10px;
+  border: 3px solid #f82344;
+}
+
+.col-1{
+  width: 12.5%;
+}
+.col-2{
+  width: 25%;
+}
+.col-3{
+  width: 37.5%;
+}
+.col-4{
+  width: 50%;
+}
+.col-5{
+  width: 62.5%;
+}
+.col-6{
+  width: 75%;
+}
+.col-7{
+  width: 87.5%;
+}
+.col-8{
+  width: 100%;
+}
+
+.suffix-1{
+  margin-left: 12.5%;
+}
+.suffix-2{
+  margin-left: 25%;
+}
+.suffix-3{
+  margin-left: 37.5%;
+}
+.suffix-4{
+  margin-left: 50%;
+}
+
+
+/* 헤더 영역 */
+
+ul{
+  list-style-type: none;
+}
+
+header{
+  background-color: #000;
+  height: 45px;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.navigation li{
+  float: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 45px;
+  font-family: 'Nightmare-Before-Christmas';
+}
+
+.navigation li a{
+  text-decoration: none;
+  color: #b14b24;
+}
+
+.navigation li a:hover,
+.navigation li a:focus{
+  color: gray;
+}
+
+.nav::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* 비주얼 영역 */
+
+.main-visual{
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.sub-visual{
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+
+.bg-jack{
+  width: 150px;
+  position: absolute;
+  top: 35vh;
+  right: 0;
+  position: fixed;
+}
+
+
+/* 메인 영역 */
+
+main{
+  background-color: #fff;
+}
+
+.part-1{
+  text-align: center;
+  padding-top: 35px;
+  position: relative;
+}
+
+h1{
+  padding-top: 40px;
+  font-size: 5rem;
+  margin: auto;
+  line-height: 4.5rem;
+  padding-bottom: 20px;
+  font-family: 'Nightmare-Before-Christmas';
+}
+
+.part-1 p{
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.part-1 span{
+  display: block;
+  padding-top: 20px;
+  font-size: 1.1rem;
+}
+
+.part-1 em{
+  font-weight: bold;
+  font-family: 'Nightmare-Before-Christmas';
+  font-size: 1.8rem;
+}
+
+.part-2{
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 8px;
+  color: #000;
+  font-family: 'Nightmare-Before-Christmas';
+}
+
+.part-3 {
+  margin-top: 60px;
+}
+
+.part-2::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.iframe-container{
+  position: relative;
+  padding-bottom: 56.25%;
+  min-width: 100%;
+  height: 0;
+}
+
+.video-content{
+  position: absolute;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[class*="row-"] {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 2vh;
+}
+
+.thumbnail-content [class*="thumb-"] {
+  height: 210px;
+  width: 210px;
+}
+
+.thumbnail-content a:hover{
+  border: 4px solid #b14b24;
+}
+
+.thumb-1{
+  background: url("images/thumb_1@240.png") 50% 50% no-repeat;
+}
+
+.thumb-2{
+  background: url("images/thumb_2@240.jpg") 50% 50% no-repeat;
+}
+
+.thumb-3{
+  background: url("images/thumb_3@240.png") 50% 50% no-repeat;
+}
+
+.thumb-4{
+  background: url("images/thumb_4@240.png") 50% 50% no-repeat;
+}
+
+.thumb-5{
+  background: url("images/thumb_5@240.png") 50% 50% no-repeat;
+}
+
+.thumb-6{
+  background: url("images/thumb_6@240.png") 50% 50% no-repeat;
+}
+
+.thumb-7{
+  background: url("images/thumb_7@240.png") 50% 50% no-repeat;
+}
+
+.thumb-8{
+  background: url("images/thumb_8@240.png") 50% 50% no-repeat;
+}
+
+.thumb-9{
+  background: url("images/thumb_9@240.png") 50% 50% no-repeat;
+}
+
+.row-3{
+  padding-bottom: 60px;
+  margin-bottom: 0;
+}
+
+
+/* 푸터 영역 */
+
+footer{
+  padding-bottom: 20px;
+  background-color: #000;
+  height:60px;
+}
+
+.sns-btn{
+  margin-top: 20px;
+}
+
+.sns-btn img{
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+footer img{
+  width: 150px;
+  height: auto;
+  float: right;
+  padding-top: 0;
+}

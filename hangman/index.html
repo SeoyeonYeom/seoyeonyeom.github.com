@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="hangman.css">
+</head>
+<body t="0x31">
+  <div class="main">
+    <div class="title">HANGMAN GAME</div>
+    <div class="button" onclick="startGame()">Play</div>
+    <div class="footer">modified by Sy.Yeom</div>
+  </div>
+
+  <div class="game-page">
+    <div class="answer"></div>
+    <div class="game">
+      <!-- <div class="player"> -->
+      <div class="poorman">
+        <div class="head" data="false" id="g4"></div>
+        <div class="body" data="false" data-2="false" data-3="false" id="g5"></div>
+        <div class="foot" data="false" data-2="false" id="g6"></div>
+      </div>
+      <!-- </div> -->
+      <div class="string3" data="false" id="g3"></div>
+      <div class="string2" data="false" id="g2"></div>
+      <div class="string" data="false" id="g1"></div>
+      <div class="ground" data="false" id="g0"></div>
+    </div>
+    <div class="keyboard"></div>
+  </div>
+
+  <div class="result hidden">
+    <div class="title" id="win">TITLE</div>
+    <div class="body" id="message">Message</div>
+    <div class="button" onclick="startGame()">Try Again?</div>
+  </div>
+</body>
+<script src="hangman.js"></script>
+</html>

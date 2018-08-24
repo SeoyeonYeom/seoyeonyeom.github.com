@@ -1,0 +1,294 @@
+@import normalize.scss
+@import grid.scss
+@import "../style-font.css"
+
+
+
+/* 자주 쓰는 믹스인 설정 */
+
+@mixin flex($justify-content: center, $align-items: center)
+  display: flex
+  justify-content: $justify-content
+  align-items: $align-items
+  flex-direction: row
+
+@mixin trans-center($top: 50%, $left: 50%)
+  top: $top
+  left: $left
+  transform: translate(-$left, -$top)
+
+@mixin padding-fix($width: 100%, $height: 88px)
+  width: $width
+  height: $height
+
+
+
+/* 자주 쓰는 클래스 설정 */
+
+.clear-fix
+  content: ""
+  clear: both
+  display: block
+
+.mobile-hide
+  @media screen and (max-width: 750px)
+    display: none
+
+.img-row
+  @include flex
+  flex-direction: column
+  float: left
+  @extend .col-d-3
+  @extend .col-t-4
+  @extend .col-m-2
+
+
+
+
+/* 본문 디자인 */
+
+body
+  font-family: 'Aileron-R'
+
+.wrapper
+  width : 100%
+
+header
+  background: url("../images/head.png")
+  @media screen and (max-width: 750px)
+    height: 800px
+  @media screen and (min-width: 750px) and (max-width: 1024px)
+    height: 680px
+  @media screen and (min-width: 1024px) and (max-width: 1920px)
+    height: 980px
+  .menu
+    @include flex($justify-content: space-between)
+    @media screen and (max-width: 750px)
+      height: 88px
+    @media screen and (min-width: 750px) and (max-width: 1024px)
+      height: 86px
+    @media screen and (min-width: 1024px) and (max-width: 1920px)
+      height: 110px
+    .navigation
+      @extend .col-t-4
+      @extend .col-d-4
+      @extend .mobile-hide
+      ul
+        width: 100%
+        @include flex($justify-content: space-around)
+    .logo, .menu-btn
+      width: 100px
+      text-align: center
+    .menu-btn
+      @media screen and (min-width: 750px) and (max-width: 1920px)
+        display: none
+  .headline
+    color: #fff
+    @media screen and (max-width: 750px)
+      padding: 0 88px 0
+    @media screen and (min-width: 750px) and (max-width: 1024px)
+      padding: 0 112px 0
+    @media screen and (min-width: 1024px) and (max-width: 1920px)
+      padding: 0 160px 0
+    .head-title
+      @include flex
+      @media screen and (max-width: 750px)
+        font-size: 60px
+        height: 680px
+      @media screen and (min-width: 750px) and (max-width: 1024px)
+        height: 415px
+        font-size: 68px
+      @media screen and (min-width: 1024px) and (max-width: 1920px)
+        height: 656px
+        font-size: 68px
+    .slider
+      border-top: 2px solid #fff
+      width: 100%
+      @include flex ($align-items: baseline)
+      @media screen and (max-width: 750px)
+        display: none
+      @media screen and (min-width: 750px) and (max-width: 1024px)
+        height: 180px
+      @media screen and (min-width: 1024px) and (max-width: 1920px)
+        height: 214px
+      & > div
+        @extend .col-d-4
+        @extend .col-t-4
+        position: relative
+        padding-top: 30px
+        a
+          strong
+            font-size: 16px
+            display: block
+          span
+            font-size: 14px
+          &:focus, &:hover
+            color: #43f3d0
+          &::before
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 95%
+            left: 0
+            background-color: #43f3d0
+            transition: all 0.4s
+          &:focus::before, &:hover::before
+            right: 0
+
+
+.visual
+  width: 100%
+  .d-only
+    @media screen and (max-width: 1024px)
+      display: none
+    .row
+      @extend .img-row
+      a
+        display: block
+        img
+          width: 100%
+    &::after
+      @extend .clear-fix
+  .else
+    @media screen and (min-width: 1024px) and (max-width: 1920px)
+      display: none
+    .row
+      @extend .img-row
+      a
+        display: block
+        img
+          width: 100%
+    &::after
+      @extend .clear-fix
+
+
+.text-container
+  @media screen and (max-width: 750px)
+    padding: 0 88px 0
+  @media screen and (min-width: 750px) and (max-width: 1024px)
+    padding: 0 112px 0
+  @media screen and (min-width: 1024px) and (max-width: 1920px)
+    padding: 0 160px 0
+  background-color: #0b0b0b
+  color: #fff
+  .news
+    @include flex($justify-content: space-between, $align-items: baseline)
+    border-bottom: 2px solid #55acee
+    @media screen and (max-width: 750px)
+      padding-top: 75px
+      padding-bottom: 75px
+      font-size: 32px
+    @media screen and (min-width: 750px) and (max-width: 1920px)
+      padding-top: 80px
+      padding-bottom: 80px
+      font-size: 26px
+    a
+      @extend .col-m-3
+      @extend .col-t-6
+      @extend .col-d-5
+    .d-only
+      @media screen and (max-width: 1024px)
+        display: none
+  .twitter
+    @include flex($justify-content: space-between, $align-items: baseline)
+    border-bottom: 2px solid #878686
+    @media screen and (max-width: 750px)
+      padding-top: 75px
+      padding-bottom: 75px
+      font-size: 22px
+    @media screen and (min-width: 750px) and (max-width: 1920px)
+      font-size: 18px
+      padding-top: 80px
+      padding-bottom: 80px
+    .twitter-para
+      @media screen and (max-width: 750px)
+        @include flex($justify-content: space-around, $align-items: baseline)
+        flex-direction: column
+        width: 90%
+      @media screen and (min-width: 750px) and (max-width: 1920px)
+        @include flex($justify-content: space-between, $align-items: baseline)
+        width: 90%
+      .d-only
+        @media screen and (max-width: 1024px)
+          display: none
+      a
+        @extend .col-m-4
+        @extend .col-t-4
+        @extend .col-d-4
+        strong
+          color: #55acee
+
+
+.section
+  @extend .col-m-1
+  @extend .col-t-2
+  @extend .col-d-1
+  @media screen and (max-width: 750px)
+    font-size: 22px
+  @media screen and (min-width: 750px) and (max-width: 1920px)
+    font-size: 18px
+
+
+.date
+  color: #878686
+  margin-top: 20px
+  @media screen and (max-width: 750px)
+    font-size: 20px
+  @media screen and (min-width: 750px) and (max-width: 1024px)
+    font-size: 18px
+  @media screen and (min-width: 1024px) and (max-width: 1920px)
+    font-size: 14px
+
+
+footer
+  background-color: #0b0b0b
+  color: #fff
+  @media screen and (max-width: 750px)
+    padding: 75px 88px 0
+    font-size: 22px
+    min-height: 490px
+  @media screen and (min-width: 750px) and (max-width: 1024px)
+    padding: 80px 112px 0
+    min-height: 250px
+  @media screen and (min-width: 1024px) and (max-width: 1920px)
+    padding: 80px 160px 80px
+    @include flex($justify-content: space-between, $align-items: baseline)
+  .contact, .office, .social
+    @include flex($justify-content: flex-start, $align-items: baseline)
+    @media screen and (max-width: 750px)
+      @extend .col-m-4
+      font-size: 22px
+    @media screen and (min-width: 750px) and (max-width: 1024px)
+      @extend .col-t-4
+      float: left
+    @media screen and (min-width: 1024px) and (max-width: 1920px)
+      @extend .col-d-4
+      font-size: 18px
+    .section
+      width: 25%
+    .footer-para
+      color: #878686
+      width: 75%
+  .contact
+    position: relative
+    .footer-para
+      span:nth-of-type(1)
+        color: #43f3d0
+    &::before
+      content: ""
+      background: url("../images/logo-white.png")
+      background-repeat: no-repeat
+      background-position: 50% 0
+      position: absolute
+      top: 0
+      left: 0
+      transform: translateX(-100%)
+      @media screen and (max-width: 750px)
+        @include padding-fix($width: 88px)
+      @media screen and (min-width: 750px) and (max-width: 1024px)
+        @include padding-fix($width: 112px)
+      @media screen and (min-width: 1024px) and (max-width: 1920px)
+        @include padding-fix($width: 160px)
+  .social
+      span:nth-of-type(2)
+        color: #e35086

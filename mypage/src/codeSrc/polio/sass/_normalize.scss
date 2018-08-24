@@ -1,0 +1,31 @@
+
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body, div, header, nav, ul, ol, li, a, p, span, h1, h2, h3, h4, h5, h6, footer,
+section, article, img, video, button, table, dl, dt, dd, tr, td, th {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  border-style: none;
+  vertical-align: top;
+}
+
+ul, ol {
+  list-style-type: none;
+}

@@ -11,12 +11,13 @@ const Wrapper = styled.div`
   & .textBox {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     margin: 2rem 0;
   }
 `;
 
 const Img = styled.div`
+  padding: 0 1rem 0 2rem;
   & .imgContainer {
     overflow: hidden;
     width: 200px;
@@ -69,10 +70,10 @@ export default class Career extends Component {
           <Text>
             <div>
               <p className="detail">Lead a project creating and developing a new version of the website replacing the previous one. 
-              was in charge of designing UI/UX and page layout, and developing backend & frontend code including API.</p>
+              was in charge of designing UI/UX and page layout, and developing backend &amp; frontend code including API.</p>
               <p>- Implemented responsive web which supports large screen, computer, tablet, and mobile. </p>
               <p>- Customized Semantic-ui, React-Infinite-Scroll library, and various other react tools.</p>
-              <p>- Mysql for Database, Node.js & Express for back-end, React & Redux for front-end.</p>
+              <p>- Mysql for Database, Node.js&amp;Express.js for back-end, React&amp;Redux for front-end.</p>
             </div>
           </Text>
         </div>
@@ -87,7 +88,7 @@ export default class Career extends Component {
             <div>
               <p className="detail">Managed the daily maintenance of the website, deal with the client's request 
                 including fixing error issues and improving its performance.</p>
-              <p>- Tomcat7, eclipse, mysql, Java & spring, jsp, jquery and css.</p>
+              <p>- Tomcat7, eclipse, mysql, Java&amp;spring, jsp, jquery and css.</p>
               <p>- Used tools such as Putty and Filezilla for accessing server.</p>
             </div>
           </Text>
@@ -101,7 +102,7 @@ export default class Career extends Component {
           </Img>
           <Text>
             <div>
-              <p className="detail">Participated in reorganizing web&mobile web, web site maintenance. 
+              <p className="detail">Participated in reorganizing web&amp;mobile web, web site maintenance. 
                 Especially designing calendar UI and implementing its function with only jquery. 
                 Also developed a dashboard page for B2B clients, using the google chart.</p>
               <p>- Jquery, css, JS-render template, semantic-ui, and GitFlow.</p>

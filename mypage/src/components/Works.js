@@ -45,7 +45,7 @@ export default class Works extends Component {
             <NavLink exact to="/works" activeStyle={{ color: "#EC414F" }}>Career</NavLink>
           </li>
           <li>
-            <NavLink to="/works/play" activeStyle={{ color: "#EC414F" }}>Play&Learn</NavLink>
+            <NavLink to="/works/play" activeStyle={{ color: "#EC414F" }}>Play&amp;Learn</NavLink>
           </li>
         </Tap>
         <Route exact path="/works" component={Career}/>

@@ -16,11 +16,22 @@ const Wrapper = styled.div`
 `;
 
 const Box = styled.div`
-  width: 320px;
-  height: 380px;
+  float: left;
+  @media only screen and (max-width: 767px) and (min-width: 320px){
+    margin: 1rem 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1199px) and (min-width: 768px){
+    margin: 1rem 2.5%;
+    width: 45%;
+  }
+  @media only screen and (min-width: 1200px){
+    margin: 1rem 1.6%;
+    width: 30%;
+  }
   & .imgBox {
     width: 100%;
-    height: 320px;
+    height: 220px;
     background-size: cover;
     &.img1 {
       background-image: url(${Aqua});
@@ -49,6 +60,10 @@ const TextPart = styled.div`
   padding: 1rem;
   width: 100%;
   height: 60px;
+  line-height: 2.5;
+  &.longText {
+    line-height: 1.2;
+  }
 `;
 
 export default class Play extends Component {
@@ -56,30 +71,33 @@ export default class Play extends Component {
     return(
       <Wrapper>
         <div className="contentBox">
+          <a href="../codeSrc/aqua/index.html" target="blank">
           <Box>
             <div className="imgBox img1"></div>
-            <TextPart>Basic HTML5&CSS3&JavaScript</TextPart>
+            <TextPart>Basic HTML5&amp;CSS3&amp;JavaScript</TextPart>
           </Box>
+          </a>
           <Box>
             <div className="imgBox img2"></div>
             <TextPart>1920 wide version with SASS</TextPart>
           </Box>
           <Box>
             <div className="imgBox img3"></div>
-            <TextPart>Responsive Web&Tablet&Mobile using Grid System</TextPart>
+            <TextPart className="longText">Responsive Web&amp;Tablet&amp;Mobile using Grid System</TextPart>
           </Box>
           <Box>
             <div className="imgBox img4"></div>
-            <TextPart>Hangman game with Native JavaScript</TextPart>
+            <TextPart>Native JavaScript Hangman Game</TextPart>
           </Box>
           <Box>
             <div className="imgBox img5"></div>
-            <TextPart>Matrix movie effect</TextPart>
+            <TextPart>Matrix Movie Effect</TextPart>
           </Box>
           <Box>
             <div className="imgBox img6"></div>
             <TextPart>Nightmare in Christmas</TextPart>
           </Box>
+          <div className="clear"></div>
         </div>
       </Wrapper>
     )
