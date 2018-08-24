@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Main}/>
+          <Route exact path="/githubPage" component={Main}/>
           <Route path="/:menu" component={Template}/>
         </Switch>
       </BrowserRouter>
