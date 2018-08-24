@@ -77,7 +77,7 @@ export default class Resume extends Component {
               </div>
               <div className="detail">
                 Member of a development team responsible for design, development, 
-                testing and debugging the web/mobile web. Worked closely with team members using Git Flow. 
+                testing and debugging the web/mobile web. Worked closely with other team members using Git Flow. 
               </div>
             </Content>
             <Content>
@@ -88,9 +88,9 @@ export default class Resume extends Component {
                 marketer | Jan 2015 - Aug 2016
               </div>
               <div className="detail">
-                Hired as a member of the marketing team support developing marketing concept 
-                and advertising activity. Coordinated event and trade show with budgets up to $10 million. 
-                Created main advertising copy of the movie "Beauty Inside" and took charge of public relations 
+                Hired as a member of marketing team to support developing marketing concept 
+                and advertising activities. Coordinated promotion events and trade show with budgets up to $10 million. 
+                Especially created main advertising copy of the movie "Beauty Inside", and took charge of public relations 
                 of "Train to Busan". 
               </div>
             </Content>
@@ -103,7 +103,7 @@ export default class Resume extends Component {
               </div>
               <div className="detail">
                 Served at the department of film&amp;education as an intern. 
-                Supported organizing formal events held to introduce Korean culture around.
+                Supported organizing formal events held to introduce Korean culture around New York City.
               </div>
             </Content>
           </div>

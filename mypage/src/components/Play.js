@@ -33,6 +33,9 @@ const Box = styled.div`
     width: 100%;
     height: 220px;
     background-size: cover;
+    &:hover {
+      opacity: 0.7;
+    }
     &.img1 {
       background-image: url(${Aqua});
     }
