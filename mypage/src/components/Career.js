@@ -74,10 +74,12 @@ export default class Career extends Component {
       <Wrapper>
         <div className="textBox">
           <Img>
-            <div className="imgContainer box1"></div>
-            <div className="imgTitle">
-              <a href="http://opensrcdesign.com" target="blank">Opensrcdesign.com</a>
-            </div>
+            <a href="http://opensrcdesign.com" target="blank">
+              <div className="imgContainer box1"></div>
+              <div className="imgTitle">
+                Opensrcdesign.com
+              </div>
+            </a>
           </Img>
           <Text>
             <div>
@@ -91,10 +93,12 @@ export default class Career extends Component {
         </div>
         <div className="textBox">
           <Img>
-            <div className="imgContainer box2"></div>
-            <div className="imgTitle">
-              <a href="http://opensrcdesign.kookmin.ac.kr" target="blank">Opensrcdesign.kookmin.ac.kr</a>
-            </div>
+            <a href="http://opensrcdesign.kookmin.ac.kr" target="blank">
+              <div className="imgContainer box2"></div>
+              <div className="imgTitle">
+                Opensrcdesign.kookmin.ac.kr
+              </div>
+            </a>
           </Img>
           <Text>
             <div>
@@ -107,10 +111,12 @@ export default class Career extends Component {
         </div>
         <div className="textBox">
           <Img>
-            <div className="imgContainer box3"></div>
-            <div className="imgTitle">
-              <a href="https://bringprice.com" target="blank">Bringprice.com</a>
-            </div>
+            <a href="https://bringprice.com" target="blank">
+              <div className="imgContainer box3"></div>
+              <div className="imgTitle">
+                Bringprice.com
+              </div>
+            </a>
           </Img>
           <Text>
             <div>
