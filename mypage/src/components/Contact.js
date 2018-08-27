@@ -6,7 +6,8 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen, faCommentDots } from "@fortawesome/free-solid-svg-icons";
 
 const Wrapper = styled.div`
-  padding-top: 1rem;
+  padding-top: 4rem;
+  opacity: 0;
 `;
 
 const Lists = styled.div`
@@ -21,9 +22,18 @@ const Lists = styled.div`
 `;
 
 export default class Contact extends Component {
+  componentDidMount(){
+    const target = document.getElementById("Wrapper");
+    setTimeout(()=>{
+      target.style.paddingTop = "1rem";
+      target.style.opacity = 1;
+      target.style.transition = "all, 0.5s";
+    }, 50);
+  }
+
   render(){
     return(
-      <Wrapper>
+      <Wrapper id="Wrapper">
         <Lists>
           <FontAwesomeIcon icon={faLinkedin} size="2x"/>
           <span>

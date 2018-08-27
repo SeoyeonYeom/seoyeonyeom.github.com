@@ -42,10 +42,9 @@ export default class Main extends Component {
     return(
       <Container>
         <Header/>
-          <SayContainer>Hello, <br></br>Have we met before?</SayContainer>
+          <SayContainer></SayContainer>
           <ImgContainer>
             <img src={MainGif} alt="Hello image"/>
-            <div className="message">"Ouch, don't sqeeze me!"</div>
           </ImgContainer>
         <Footer/>
       </Container>

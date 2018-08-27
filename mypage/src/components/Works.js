@@ -7,6 +7,8 @@ import Play from "./Play";
 
 const Wrapper = styled.div`
   margin-bottom: 4rem;
+  padding-top: 4rem;
+  opacity: 0;
   @media only screen and (max-width: 767px) and (min-width: 320px){
     width: 320px;
     margin: auto;
@@ -42,9 +44,18 @@ const Tap = styled.ul`
 `;
 
 export default class Works extends Component {
+  componentDidMount(){
+    const target = document.getElementById("Wrapper");
+    setTimeout(()=>{
+      target.style.paddingTop = "1rem";
+      target.style.opacity = 1;
+      target.style.transition = "all, 0.5s";
+    }, 50);
+  }
+
   render(){
     return(
-      <Wrapper>
+      <Wrapper id="Wrapper">
         <Tap>
           <li>
             <NavLink exact to="/works" activeStyle={{ color: "#EC414F" }}>Career</NavLink>

@@ -9,6 +9,7 @@ import Matrix from "../img/matrix.jpg";
 import Night from "../img/night.jpg";
 
 const Wrapper = styled.div`
+  opacity: 0.3;
   & .contentBox {
     margin: 2rem 0;
     width: 100%;
@@ -70,15 +71,23 @@ const TextPart = styled.div`
 `;
 
 export default class Play extends Component {
+  componentDidMount(){
+    const target = document.getElementById("PlayWrap");
+    setTimeout(()=>{
+      target.style.opacity = 1;
+      target.style.transition = "all, 0.5s";
+    }, 50);
+  }
+
   render(){
     return(
-      <Wrapper>
+      <Wrapper id="PlayWrap">
         <div className="contentBox">
           <a href="http://htmlpreview.github.io/?https://github.com/SeoyeonYeom/githubPage/blob/master/aqua/index.html" 
              target="blank">
             <Box>
               <div className="imgBox img1"></div>
-              <TextPart>Basic HTML5&amp;CSS3&amp;JavaScript</TextPart>
+              <TextPart>Basic HTML5 &amp; CSS3 &amp; JavaScript</TextPart>
             </Box>
           </a>
           <a href="http://htmlpreview.github.io/?https://github.com/SeoyeonYeom/githubPage/blob/master/aware/index.html" 
@@ -92,7 +101,7 @@ export default class Play extends Component {
              target="blank">
             <Box>
               <div className="imgBox img3"></div>
-              <TextPart className="longText">Responsive Web&amp;Tablet&amp;Mobile using Grid System</TextPart>
+              <TextPart className="longText">Responsive Web &amp; Tablet &amp; Mobile using Grid System</TextPart>
             </Box>
           </a>
           <a href="http://htmlpreview.github.io/?https://github.com/SeoyeonYeom/githubPage/blob/master/hangman/index.html" 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Content from "../components/Content";
-import ReactDOM from "react-dom";
 
 export default class Template extends Component {
   state = {

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
-
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 
 body {
   margin: 0;
@@ -29,4 +30,12 @@ a {
   clear: both;
   display: block;
   width: 100%;
+}
+
+.nameHead {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.navHead {
+  font-family: 'Karla', sans-serif;
 }

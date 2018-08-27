@@ -46,9 +46,9 @@ class Header extends Component {
   render(){
     return(
       <HeadWrap>
-        <Link to="/githubPage"><Logo>seoyeon.yeom</Logo></Link>
+        <Link to="/githubPage"><Logo className="nameHead">seoyeon.yeom</Logo></Link>
         <MenuWrap id={this.props.position}>
-          <ul>
+          <ul className="navHead">
             <Link to="/about"><li>ABOUT</li></Link>
             <Link to="/works"><li>WORKS</li></Link>
             <Link to="/contact"><li>CONTACT</li></Link>

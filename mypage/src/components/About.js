@@ -5,6 +5,8 @@ import StyleGuide from '../StyleGuide';
 
 const Wrapper = styled.div`
   margin-bottom: 4rem;
+  opacity: 0;
+  padding-top: 4rem;
   & .imgWrap {
     width: 40%;
     float: left;
@@ -53,6 +55,15 @@ const TextPara = styled.div`
 `;
 
 export default class About extends Component {
+  componentDidMount(){
+    const target = document.getElementById("Wrapper");
+    setTimeout(()=>{
+      target.style.paddingTop = "2rem";
+      target.style.opacity = 1;
+      target.style.transition = "all, 0.5s";
+    }, 50);
+  }
+
   goResume = () => {
     this.props.history.push("/resume");
   }

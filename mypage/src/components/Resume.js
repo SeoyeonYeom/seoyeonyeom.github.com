@@ -4,6 +4,8 @@ import StyleGuide from "../StyleGuide";
 
 const Wrapper = styled.div`
   margin-top: 3rem;
+  opacity: 0;
+  padding-top: 4rem;
   margin-bottom: 4rem;
 `;
 
@@ -45,9 +47,18 @@ const Content = styled.div`
 `;
 
 export default class Resume extends Component {
+  componentDidMount(){
+    const target = document.getElementById("Wrapper");
+    setTimeout(()=>{
+      target.style.paddingTop = "1rem";
+      target.style.opacity = 1;
+      target.style.transition = "all, 0.5s";
+    }, 50);
+  }
+
   render(){
     return(
-      <Wrapper>
+      <Wrapper id="Wrapper">
         <Download>
           Click here for Download.
         </Download>
@@ -121,9 +132,9 @@ export default class Resume extends Component {
             <h2>Skill</h2>
             <Content>
               <div className="skillset">
-              React with Redux; Node.js with Express framework;
-              HTML5; Css/Sass; Jquery; Ajax;<br></br>
-              advanced beginner with Mysql, mysql Workbench, and Java;<br></br>
+              React with Redux; Node.js with Express framework;<br></br>
+              HTML5; CSS/SASS; Jquery; AJAX;<br></br>
+              advanced beginner with Mysql and Java;<br></br>
               possible to read and handle simple code with Python;<br></br>
               familiar with Git Flow, and NPM package;
               </div>

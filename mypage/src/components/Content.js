@@ -8,7 +8,6 @@ import StyleGuide from '../StyleGuide';
 
 const ContentBox = styled.div`
   margin: auto;
-  padding-top: 2rem;
   @media only screen and (max-width: 767px) and (min-width: 320px){
     width: 90%;
   }
@@ -24,7 +23,7 @@ export default class Content extends Component {
   render(){
     const menu = this.props.match.params.menu;
     return(
-      <ContentBox id="ContentBox">
+      <ContentBox>
         {menu === "about" ? <About history={this.props.history}/>
        : menu === "works" ? <Works/>
        : menu === "contact" ? <Contact/>
