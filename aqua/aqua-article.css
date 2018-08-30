@@ -73,6 +73,10 @@ img{
   position: relative;
 }
 
+.navigation a{
+  color: #fff;
+}
+
 .navigation li > a:focus,
 .navigation li > a:hover{
   color: #0081ff;
