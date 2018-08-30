@@ -2,20 +2,20 @@
     font-family: 'VarelaRound-Regular';
     font-style: normal;
     font-weight: normal;
-    src: url(fonts/Varela_Round/VarelaRound-Regular.ttf);
+    src: url("fonts/Varela_Round/VarelaRound-Regular.ttf");
 }
 @font-face {
     font-family: 'PT_Serif';
     font-style: normal;
     font-weight: normal;
-    src: url(fonts/PT_Serif/PT_Serif-Web-Italic.ttf);
+    src: url("fonts/PT_Serif/PT_Serif-Web-Italic.ttf");
 
 }
 @font-face {
     font-family: 'Oswald-Bold';
     font-style: normal;
     font-weight: normal;
-    src: url(fonts/Oswald/Oswald-Bold.ttf);
+    src: url("fonts/Oswald/Oswald-Bold.ttf");
 
   }
 
@@ -23,6 +23,6 @@
     font-family: 'Nightmare-Before-Christmas';
     font-style: normal;
     font-weight: normal;
-    src: url(fonts/Nightmare_Before_Christmas/Nightmare-Before-Christmas.ttf);
+    src: url("fonts/Nightmare_Before_Christmas/Nightmare-Before-Christmas.ttf");
 
   }
