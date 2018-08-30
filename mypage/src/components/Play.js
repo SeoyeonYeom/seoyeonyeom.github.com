@@ -87,7 +87,7 @@ export default class Play extends Component {
              target="blank">
             <Box>
               <div className="imgBox img1"></div>
-              <TextPart>Basic HTML5 &amp; CSS3 &amp; JavaScript</TextPart>
+              <TextPart>Basic HTML5 &amp; CSS3</TextPart>
             </Box>
           </a>
           <a href="http://htmlpreview.github.io/?https://github.com/SeoyeonYeom/githubPage/blob/master/aware/index.html" 

@@ -30,16 +30,16 @@ body{
   position: absolute;
   z-index: 1000;
   top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  min-height: 400vh;
 }
 
 .container.show-grid::before{
   background-image:
   linear-gradient(180deg, transparent 13px, #71706f 13px ),
   linear-gradient(90deg, rgba(251, 108, 130, 0.3) 50%, transparent 50%);
-  background-size: 1px 14px, 25% 1px;
+  background-size: 0, 25%;
 }
 
 .grid-btn-on{
@@ -105,20 +105,28 @@ header{
 }
 
 .navigation{
-  display: flex;
-  justify-content: center;
-  align-content: center;
   margin-top: 30px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 .navigation li{
   float: left;
   font-size: 1.8rem;
   font-weight: bold;
-  padding-left: 20px;
-  padding-right: 20px;
   line-height: 45px;
   font-family: 'Nightmare-Before-Christmas';
+}
+
+.navigation li:last-of-type::after {
+  clear: both;
+  display: block;
+  content: "";
 }
 
 .navigation li a{
