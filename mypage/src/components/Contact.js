@@ -15,9 +15,12 @@ const Lists = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  & > span {
-    margin-left: 10px;
-    font-size: ${StyleGuide.font.size.paragraph};
+  & .listWrap {
+    min-width: 200px;
+    & > span {
+      margin-left: 10px;
+      font-size: ${StyleGuide.font.size.paragraph};
+    }
   }
 `;
 
@@ -35,28 +38,36 @@ export default class Contact extends Component {
     return(
       <Wrapper id="Wrapper">
         <Lists>
-          <FontAwesomeIcon icon={faLinkedin} size="2x"/>
-          <span>
-            <a href="https://www.linkedin.com/in/sienna-seoyeon-yeom-74132457/" target="blank">
-              Go to view my profile
-            </a>
-          </span>
+          <div className="listWrap">
+            <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+            <span>
+              <a href="https://www.linkedin.com/in/sienna-seoyeon-yeom-74132457/" target="blank">
+                Go to view my profile
+              </a>
+            </span>
+          </div>
         </Lists>
         <Lists>
-          <FontAwesomeIcon icon={faGithub} size="2x"/>
-          <span>
-            <a href="https://github.com/SeoyeonYeom" target="blank">
-              Visit my github page
-            </a>
-          </span>
+          <div className="listWrap">
+            <FontAwesomeIcon icon={faGithub} size="2x"/>
+            <span>
+              <a href="https://github.com/SeoyeonYeom" target="blank">
+                Visit my github page
+              </a>
+            </span>
+          </div>
         </Lists>
         <Lists>
-          <FontAwesomeIcon icon={faEnvelopeOpen} size="2x"/>
-          <span>email: sy8095@gmail.com</span>
+          <div className="listWrap">
+            <FontAwesomeIcon icon={faEnvelopeOpen} size="2x"/>
+            <span>email: sy8095@gmail.com</span>
+          </div>
         </Lists>
         <Lists>
-          <FontAwesomeIcon icon={faCommentDots} size="2x"/>
-          <span>kakaotalk: sy8095</span>
+          <div className="listWrap">
+            <FontAwesomeIcon icon={faCommentDots} size="2x"/>
+            <span>kakaotalk: sy8095</span>
+          </div>
         </Lists>
       </Wrapper>
     )

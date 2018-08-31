@@ -20,6 +20,9 @@ const Wrapper = styled.div`
 
 const Img = styled.div`
   padding: 0 1rem 0 2rem;
+  &:hover {
+    font-weight: bold;
+  }
   @media only screen and (max-width: 767px) and (min-width: 320px){
     padding: 0;
   }

@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 
 const Box = styled.div`
   float: left;
+  overflow: hidden;
   @media only screen and (max-width: 767px) and (min-width: 320px){
     margin: 1rem 0;
     width: 100%;
@@ -35,7 +36,8 @@ const Box = styled.div`
     height: 220px;
     background-size: cover;
     &:hover {
-      opacity: 0.7;
+      transform: scale(1.05);
+      transition: all, 0.7s;
     }
     &.img1 {
       background-image: url(${Aqua});
