@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import StyleGuide from "../StyleGuide";
+import ResumePDF from "../img/resume.pdf";
 
 const Wrapper = styled.div`
   margin-top: 3rem;
@@ -60,7 +61,7 @@ export default class Resume extends Component {
     return(
       <Wrapper id="Wrapper">
         <Download>
-          Click here for Download.
+          <a href={ResumePDF}>Click here for Download.</a>
         </Download>
         <TextWrap>
           <div className="exp">
@@ -74,9 +75,10 @@ export default class Resume extends Component {
               </div>
               <div className="detail">
                 Participated in improving and modifying the website from layout to function, 
-                and handling technical problems. Led project to develop the new website and played a big part of
-                every process from database to client side. Also had experience installing and setting up 
-                the tomcat server with linux server environment. 
+                and handling technical problems. Led project to create the new version of entire website and 
+                played a big part of every process including database table structure, 
+                project proposal, designing page mock-up, and coding from back to client side. 
+                Also had experience installing and setting up the tomcat server with linux server environment. 
               </div>
             </Content>
             <Content>
@@ -113,7 +115,7 @@ export default class Resume extends Component {
                 Intern | June 2013 - Feb 2014
               </div>
               <div className="detail">
-                Served at the department of film&amp;education as an intern. 
+                Served at the department of film &amp; education as an intern. 
                 Supported organizing formal events held to introduce Korean culture around New York City.
               </div>
             </Content>
@@ -132,11 +134,11 @@ export default class Resume extends Component {
             <h2>Skill</h2>
             <Content>
               <div className="skillset">
-              React with Redux; Node.js with Express framework;<br></br>
+              React.js &amp; Redux, Node.js with Express framework;<br></br>
               HTML5; CSS/SASS; Jquery; AJAX;<br></br>
+              familiar with Git Flow, and NPM package;<br></br>
               advanced beginner with Mysql and Java;<br></br>
-              possible to read and handle simple code with Python;<br></br>
-              familiar with Git Flow, and NPM package;
+              beginning level with Python and React Native;
               </div>
             </Content>
           </div>
