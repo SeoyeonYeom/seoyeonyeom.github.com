@@ -58,14 +58,14 @@ export default class Works extends Component {
       <Wrapper id="Wrapper">
         <Tap>
           <li>
-            <NavLink exact to="/works" activeStyle={{ color: "#EC414F" }}>Career</NavLink>
+            <NavLink exact to="/githubPage/works" activeStyle={{ color: "#EC414F" }}>Career</NavLink>
           </li>
           <li>
-            <NavLink to="/works/play" activeStyle={{ color: "#EC414F" }}>Play&amp;Learn</NavLink>
+            <NavLink to="/githubPage/works/play" activeStyle={{ color: "#EC414F" }}>Play&amp;Learn</NavLink>
           </li>
         </Tap>
-        <Route exact path="/works" component={Career}/>
-        <Route path="/works/play" component={Play}/>
+        <Route exact path="/githubPage/works" component={Career}/>
+        <Route path="/githubPage/works/play" component={Play}/>
       </Wrapper>
     )
   }

@@ -49,10 +49,10 @@ class Header extends Component {
         <Link to="/githubPage"><Logo className="nameHead">seoyeon.yeom</Logo></Link>
         <MenuWrap id={this.props.position}>
           <ul className="navHead">
-            <Link to="/about"><li>ABOUT</li></Link>
-            <Link to="/works"><li>WORKS</li></Link>
-            <Link to="/contact"><li>CONTACT</li></Link>
-            <Link to="/resume"><li>RESUME</li></Link>
+            <Link to="/githubPage/about"><li>ABOUT</li></Link>
+            <Link to="/githubPage/works"><li>WORKS</li></Link>
+            <Link to="/githubPage/contact"><li>CONTACT</li></Link>
+            <Link to="/githubPage/resume"><li>RESUME</li></Link>
             <div className="clear"></div>
           </ul>
         </MenuWrap>

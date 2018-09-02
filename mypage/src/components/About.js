@@ -82,15 +82,15 @@ export default class About extends Component {
               I also love music and travel. 
             </p>
             <p>   
-              I graduated with a degree in business administration from Sogang University in Seoul, Korea. 
-              I also had worked in a marketing department at a movie distribution company. 
-              After I turned my career to IT field as a web developer, those experiences as a marketer 
-              help me to deeply understand customer's needs and develop UI/UX from the user's perspective.
+              I graduated with a degree in business administration from Sogang University in Seoul, South Korea. 
+              I also had worked in a marketing department at a movie distribution company before. 
+              After I changed my career to IT field as a web developer, those working experiences and knowledge of marketing still  
+              help me to deeply understand better UI/UX and come up with creative solutions from the user's perspective.
             </p>
             <p>
-              I care intensely about conscious and thoroughly thought out good service; 
-              providing service that makes people's lives more interesting and makes them happy, 
-              sometimes even makes a positive effect on our society. 
+              I care a lot about providing good services; 
+              which can make people's lives more interesting and make them happy, 
+              sometimes may affect our society in a positive way. 
             </p>
             <p>
               For more information about me or to get in touch regarding job opportunities, 
