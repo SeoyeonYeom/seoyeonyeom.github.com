@@ -65,7 +65,7 @@ export default class About extends Component {
   }
 
   goResume = () => {
-    this.props.history.push("/resume");
+    this.props.history.push("/githubPage/resume");
   }
 
   render(){
@@ -84,8 +84,8 @@ export default class About extends Component {
             <p>   
               I graduated with a degree in business administration from Sogang University in Seoul, South Korea. 
               I also had worked in a marketing department at a movie distribution company before. 
-              After I changed my career to IT field as a web developer, those working experiences and knowledge of marketing still  
-              help me to deeply understand better UI/UX and come up with creative solutions from the user's perspective.
+              After I changed my career to IT field as a web developer, those working experiences and knowledge of marketing 
+              still help me to deeply understand better UI/UX and come up with creative solutions from the user's perspective.
             </p>
             <p>
               I care a lot about providing good services; 
