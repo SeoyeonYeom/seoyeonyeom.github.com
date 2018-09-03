@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import StyleGuide from "../StyleGuide";
-import ResumePDF from "../img/resume.pdf";
 
 const TextWrap = styled.div`
   & h2 {

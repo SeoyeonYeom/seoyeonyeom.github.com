@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import StyleGuide from "../StyleGuide";
-import ResumePDF from "../img/resume.pdf";
+import ResumePDF from "../img/SeoyeonYeom_resume.pdf";
+import ResumePDFko from "../img/SeoyeonYeom_resume_ko.pdf";
 import ResumeDetailKo from "./ResumeDetailKo";
 import ResumeDetail from "./ResumeDetail";
 
@@ -34,11 +35,10 @@ export default class Resume extends Component {
     const lan = this.props.lan;
     return(
       <Wrapper id="Wrapper">
-        <a href={ResumePDF}>
-          <Download>
-            {lan === "ko"? "여기를 클릭해서 다운로드" : "Click here for Download."}
-          </Download>
-        </a>
+        {lan === "ko"
+        ? <a href={ResumePDFko}><Download>여기를 클릭해서 다운로드</Download></a>
+        : <a href={ResumePDF}><Download>Click here for Download.</Download></a>
+        }
         {this.props.lan === "ko"
         ? <ResumeDetailKo/>
         : <ResumeDetail/>
