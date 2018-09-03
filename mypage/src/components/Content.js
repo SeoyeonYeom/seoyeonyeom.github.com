@@ -4,6 +4,7 @@ import About from "./About";
 import Works from "./Works";
 import Contact from "./Contact";
 import Resume from "./Resume";
+import Main from "./Main";
 import StyleGuide from '../StyleGuide';
 
 const ContentBox = styled.div`
@@ -24,10 +25,11 @@ export default class Content extends Component {
     const menu = this.props.match.params.menu;
     return(
       <ContentBox>
-        {menu === "about" ? <About history={this.props.history}/>
-       : menu === "works" ? <Works/>
-       : menu === "contact" ? <Contact/>
-       : <Resume/>
+        {menu === "about" ? <About {...this.props}/>
+        : menu === "works" ? <Works {...this.props}/>
+        : menu === "contact" ? <Contact {...this.props}/>
+        : menu === "resume" ? <Resume {...this.props}/>
+        : <Main/>
         }
       </ContentBox>
     )

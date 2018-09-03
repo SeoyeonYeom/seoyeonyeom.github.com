@@ -3,7 +3,9 @@ import styled from "styled-components";
 import StyleGuide from "../StyleGuide";
 import { NavLink, Route } from "react-router-dom";
 import Career from "./Career";
+import CareerKo from "./CareerKo";
 import Play from "./Play";
+import PlayKo from "./PlayKo";
 
 const Wrapper = styled.div`
   margin-bottom: 4rem;
@@ -64,8 +66,8 @@ export default class Works extends Component {
             <NavLink to="/githubPage/works/play" activeStyle={{ color: "#EC414F" }}>Play&amp;Learn</NavLink>
           </li>
         </Tap>
-        <Route exact path="/githubPage/works" component={Career}/>
-        <Route path="/githubPage/works/play" component={Play}/>
+        <Route exact path="/githubPage/works" component={this.props.lan === "ko"? CareerKo : Career}/>
+        <Route path="/githubPage/works/play" component={this.props.lan === "ko"? PlayKo : Play}/>
       </Wrapper>
     )
   }

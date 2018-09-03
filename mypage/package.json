@@ -2,7 +2,7 @@
   "name": "mypage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://seoyeonyeom.github.io/githubPage/",
+  "homepage": "https://seoyeonyeom.github.io/githubPage",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",

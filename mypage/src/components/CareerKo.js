@@ -71,9 +71,8 @@ const Text = styled.div`
   }
 `;
 
-export default class Career extends Component {
+export default class CareerKo extends Component {
   render(){
-    //console.log(this.props.location.state.lan);
     return(
       <Wrapper>
         <div className="textBox">
@@ -81,17 +80,17 @@ export default class Career extends Component {
             <a href="http://opensrcdesign.com" target="blank">
               <div className="imgContainer box1"></div>
               <div className="imgTitle">
-                Opensrcdesign.com
+                오픈 디자인
               </div>
             </a>
           </Img>
           <Text>
             <div>
-              <p className="detail">Led a project creating and developing a new version of our website from the ground up. 
-              Took charge of designing UI/UX and page layout, and developing backend &amp; frontend code including API.</p>
-              <p>- Implemented responsive web which supports large screen, computer, tablet, and mobile. </p>
-              <p>- Customized Semantic-ui, React-Infinite-Scroll library, and various other react tools.</p>
-              <p>- Mysql for Database, Node.js&amp;Express.js for back-end, React&amp;Redux for front-end.</p>
+              <p className="detail">기존 웹 사이트를 완전히 개편하여 새로운 사이트를 개발하는 프로젝트를 이끌었습니다. 
+              화면 레이아웃 기획부터 DB 테이블 설계, API, 백엔드 및 프론트엔드 개발까지의 모든 단계를 2명의 팀원이 6개월 동안 작업했습니다.</p>
+              <p>- 와이드 스크린, 라지 스크린, 컴퓨터, 태블릿, 모바일 사이즈를 지원하는 반응형 웹 구현</p>
+              <p>- Semantic-ui, React-Infinite-Scroll 및 그 외 다양한 리액트 라이브러리 활용, 커스터마이징</p>
+              <p>- 데이터베이스 관리는 Mysql, 백엔드는 Node.js와 Express, 클라이언트는 React.js 사용</p>
             </div>
           </Text>
         </div>
@@ -100,16 +99,15 @@ export default class Career extends Component {
             <a href="http://opensrcdesign.kookmin.ac.kr" target="blank">
               <div className="imgContainer box2"></div>
               <div className="imgTitle">
-                Opensrcdesign.kookmin.ac.kr
+                오픈 디자인 (구)
               </div>
             </a>
           </Img>
           <Text>
             <div>
-              <p className="detail">Managed the daily maintenance of the website, deal with the client's specifications 
-                including fixing error issues and improving its performance.</p>
-              <p>- Tomcat7, eclipse, mysql, Java&amp;spring, jsp, jquery and css.</p>
-              <p>- Used tools such as Putty and Filezilla for accessing server.</p>
+              <p className="detail">자바 개발 환경에서 기존 웹 사이트의 오류 해결 및 기능 추가, 새로운 요구사항 반영, 성능 개선 등 유지보수를 담당했습니다.</p>
+              <p>- Tomcat7, Eclipse, Mysql, Java&amp;spring, JSP, Jquery와 CSS 사용</p>
+              <p>- 서버 PC와의 통신을 위해 Putty, Filezilla 등의 툴 활용 경험</p>
             </div>
           </Text>
         </div>
@@ -118,16 +116,17 @@ export default class Career extends Component {
             <a href="https://bringprice.com" target="blank">
               <div className="imgContainer box3"></div>
               <div className="imgTitle">
-                Bringprice.com
+                브링프라이스
               </div>
             </a>
           </Img>
           <Text>
             <div>
-              <p className="detail">Participated in reorganizing web&amp;mobile web, and web site maintenance. 
-                Especially designed calendar UI and implemented its function by using only jquery. 
-                Also developed a dashboard page for B2B clients, using the google chart.</p>
-              <p>- Jquery, css, JS-render template, semantic-ui, and GitFlow.</p>
+              <p className="detail">웹 사이트의 유지보수와 웹/모바일 웹 개편 작업을 진행했습니다.
+                특히 항공권 검색 서비스에서 중요한 날짜(달력) 부분의 개발을 맡아, 기존의 라이브러리 대신 jquery만을 사용하여 직접 기능을 구현했습니다. 
+                또한 B2B 관련사들에게 제공하는 대시보드 페이지 개발을 담당하였습니다.</p>
+              <p>- Jquery, CSS, JS-render template, Semantic-ui, and GitFlow 사용</p>
+              <p>- 구글 애널리틱스, 구글 차트 라이브러리 사용 경험</p>
             </div>
           </Text>
         </div>

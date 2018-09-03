@@ -41,12 +41,9 @@ export default class Main extends Component {
   render(){
     return(
       <Container>
-        <Header/>
-          <SayContainer></SayContainer>
-          <ImgContainer>
-            <img src={MainGif} alt="Hello image"/>
-          </ImgContainer>
-        <Footer/>
+        <ImgContainer>
+          <img src={MainGif} alt="Hello image"/>
+        </ImgContainer>
       </Container>
     )
   }

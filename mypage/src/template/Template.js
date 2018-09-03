@@ -6,10 +6,8 @@ import Content from "../components/Content";
 
 export default class Template extends Component {
   state = {
-    header: "init"
-  }
-
-  componentDidMount() {
+    header: "init",
+    lang: "en"
   }
 
   getHeight = async (e) => {
@@ -24,11 +22,20 @@ export default class Template extends Component {
     }
   }
 
+  setLang = lan => {
+    this.setState({
+      lang: lan
+    });
+  }
+
   render(){
     return(
       <div onWheel={this.getHeight} ref="wrapper">
-        <Header position={this.state.header}/>
-          <Content {...this.props}/>
+        <Header position={this.state.header} 
+                history={this.props.history} 
+                setLang={this.setLang}
+                lan={this.state.lang}/>
+        <Content {...this.props} lan={this.state.lang}/>
         <Footer/>
       </div>
     )

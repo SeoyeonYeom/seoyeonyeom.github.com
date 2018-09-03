@@ -30,7 +30,7 @@ const MenuWrap = styled.div`
     background-color: #fff;
   }
   & ul {
-    width: 400px;
+    width: 500px;
     margin: 30px auto;
     & li {
       width: 100px;
@@ -41,8 +41,26 @@ const MenuWrap = styled.div`
   }
 `;
 
+const BtnWrap = styled.li`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  & button {
+    border: none;
+    margin: 0 0.2rem;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    &.active {
+      color: ${StyleGuide.color.main.basic};
+    }
+  }
+`;
 
 class Header extends Component {
+  setLang = lan => {
+    this.props.setLang(lan);
+  }
+
   render(){
     return(
       <HeadWrap>
@@ -53,6 +71,12 @@ class Header extends Component {
             <Link to="/githubPage/works"><li>WORKS</li></Link>
             <Link to="/githubPage/contact"><li>CONTACT</li></Link>
             <Link to="/githubPage/resume"><li>RESUME</li></Link>
+            <BtnWrap>
+              <button onClick={() => this.setLang("en")}
+                      className={this.props.lan === "en" ? "active" : ""}>Eng</button>
+              <button onClick={() => this.setLang("ko")}
+                      className={this.props.lan === "ko" ? "active" : ""}>Kor</button>
+            </BtnWrap>
             <div className="clear"></div>
           </ul>
         </MenuWrap>

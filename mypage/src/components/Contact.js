@@ -35,6 +35,7 @@ export default class Contact extends Component {
   }
 
   render(){
+    const lan = this.props.lan;
     return(
       <Wrapper id="Wrapper">
         <Lists>
@@ -42,7 +43,7 @@ export default class Contact extends Component {
             <FontAwesomeIcon icon={faLinkedin} size="2x"/>
             <span>
               <a href="https://www.linkedin.com/in/sienna-seoyeon-yeom-74132457/" target="blank">
-                Go to view my profile
+                {lan === "ko"? "Linkedin 프로필 보러가기" : "Go to view my profile"}
               </a>
             </span>
           </div>
@@ -52,7 +53,7 @@ export default class Contact extends Component {
             <FontAwesomeIcon icon={faGithub} size="2x"/>
             <span>
               <a href="https://github.com/SeoyeonYeom" target="blank">
-                Visit my github page
+                {lan === "ko"? "GitHub 페이지 보러가기" : "Visit my github page"}
               </a>
             </span>
           </div>
@@ -60,13 +61,13 @@ export default class Contact extends Component {
         <Lists>
           <div className="listWrap">
             <FontAwesomeIcon icon={faEnvelopeOpen} size="2x"/>
-            <span>email: sy8095@gmail.com</span>
+            <span>{lan === "ko"? "이메일" : "email"}: sy8095@gmail.com</span>
           </div>
         </Lists>
         <Lists>
           <div className="listWrap">
             <FontAwesomeIcon icon={faCommentDots} size="2x"/>
-            <span>kakaotalk: sy8095</span>
+            <span>{lan === "ko"? "카카오톡" : "kakaotalk"}: sy8095</span>
           </div>
         </Lists>
       </Wrapper>
