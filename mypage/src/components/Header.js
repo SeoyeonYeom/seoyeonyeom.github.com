@@ -50,6 +50,8 @@ const BtnWrap = styled.li`
     margin: 0 0.2rem;
     padding: 0 0.2rem;
     cursor: pointer;
+    background-color: transparent;
+    color: inherit;
     &.active {
       color: ${StyleGuide.color.main.basic};
     }

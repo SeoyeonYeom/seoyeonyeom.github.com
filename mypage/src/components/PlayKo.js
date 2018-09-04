@@ -63,7 +63,7 @@ const Box = styled.div`
 const TextPart = styled.div`
   color: #fff;
   background-color: #000;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   width: 100%;
   height: 60px;
   line-height: 2.5;
@@ -89,7 +89,7 @@ export default class PlayKo extends Component {
              target="blank">
             <Box>
               <div className="imgBox img1"></div>
-              <TextPart>기본 HTML5 &amp; CSS3를 사용한 페이지 구현</TextPart>
+              <TextPart>기본 HTML&amp;CSS를 사용한 페이지 구현</TextPart>
             </Box>
           </a>
           <a href="http://htmlpreview.github.io/?https://github.com/SeoyeonYeom/githubPage/blob/master/aware/index.html" 
@@ -124,7 +124,7 @@ export default class PlayKo extends Component {
              target="blank">
             <Box>
               <div className="imgBox img6"></div>
-              <TextPart>팀 버튼의 크리스마스의 악몽 영화 팬페이지</TextPart>
+              <TextPart>팀 버튼의 크리스마스의 악몽 팬페이지</TextPart>
             </Box>
           </a>
           <div className="clear"></div>
