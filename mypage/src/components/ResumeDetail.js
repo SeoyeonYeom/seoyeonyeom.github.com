@@ -42,7 +42,7 @@ export default class ResumeDetail extends Component {
               <span className="location">Seoul</span>
             </div>
             <div className="sub">
-              web developer | May 2017 - Now
+              web developer &amp; PM  |  May 2017 - Now
             </div>
             <div className="detail">
               Participated in improving and modifying the website from layout to function, 
@@ -57,7 +57,7 @@ export default class ResumeDetail extends Component {
               <span className="location">Seoul</span>
             </div>
             <div className="sub">
-              front end developer | Jan 2017 - Apr 2017
+              front end developer  |  Jan 2017 - Apr 2017
             </div>
             <div className="detail">
               Member of a development team responsible for design, development, 
@@ -69,7 +69,7 @@ export default class ResumeDetail extends Component {
               <span className="location">Seoul</span>
             </div>
             <div className="sub">
-              marketer | Jan 2015 - Aug 2016
+              marketer  |  Jan 2015 - Aug 2016
             </div>
             <div className="detail">
               Hired as a member of marketing team to support developing marketing concept 
@@ -83,7 +83,7 @@ export default class ResumeDetail extends Component {
               <span className="location">New York</span>
             </div>
             <div className="sub">
-              Intern | June 2013 - Feb 2014
+              Intern  |  June 2013 - Feb 2014
             </div>
             <div className="detail">
               Served at the department of film &amp; education as an intern. 

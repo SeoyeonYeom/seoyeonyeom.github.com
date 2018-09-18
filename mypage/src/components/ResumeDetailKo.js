@@ -42,7 +42,7 @@ export default class ResumeDetailKo extends Component {
               <span className="location">서울</span>
             </div>
             <div className="sub">
-              웹 개발자 | 2017년 5월 - 현재
+              웹 개발자 &amp; PM  |  2017년 5월 - 현재
             </div>
             <div className="detail">
               기존에 운영되던 웹사이트의 오류 문제 대응 및 유지보수를 담당했고, 클라이언트의 요구 사항을 반영하여 지속적으로 기능을 개선하였습니다. 
@@ -55,7 +55,7 @@ export default class ResumeDetailKo extends Component {
               <span className="location">서울</span>
             </div>
             <div className="sub">
-              프론트엔드 개발자 | 2017년 1월 - 2017년 4월
+              프론트엔드 개발자  |  2017년 1월 - 2017년 4월
             </div>
             <div className="detail">
               개발팀의 멤버로서 웹사이트의 개편 작업, UI 화면 및 기능 구현, 테스트, 디버깅 작업에 참여했습니다. Git Flow와 Bitbucket을 이용하여
@@ -67,7 +67,7 @@ export default class ResumeDetailKo extends Component {
               <span className="location">서울</span>
             </div>
             <div className="sub">
-              마케팅팀 | 2015년 1월 - 2016년 8월
+              마케팅팀  |  2015년 1월 - 2016년 8월
             </div>
             <div className="detail">
               국내 개봉 영화의 마케팅 컨셉, 포스터&amp;예고편 등 선재물 기획, 온오프라인 프로모션 진행을 담당했습니다.
@@ -80,7 +80,7 @@ export default class ResumeDetailKo extends Component {
               <span className="location">뉴욕</span>
             </div>
             <div className="sub">
-              인턴 | 2013년 6월 - 2014년 2월
+              인턴  |  2013년 6월 - 2014년 2월
             </div>
             <div className="detail">
               영화&amp;교육 파트의 인턴으로, 뉴욕에 한국 문화를 소개하는 여러 공식적인 행사들을 지원했습니다. 
